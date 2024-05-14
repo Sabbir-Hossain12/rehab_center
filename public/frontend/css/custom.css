@@ -24,3 +24,8 @@
     background-color: #6c5ce7;
     border-radius: 2px;
 }
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 750px;
+    }
+}
