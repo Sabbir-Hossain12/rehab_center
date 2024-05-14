@@ -5,8 +5,10 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::view('dashboard','backend.pages.dashboard')->middleware(['auth', 'verified'])->name('dashboard');
+Route::view('blogs','backend.pages.blogs')->middleware(['auth','verified'])->name('blogs');
 
+Route::view('dashboard','backend.pages.dashboard')->middleware(['auth', 'verified'])->name('dashboard');
+Route::view('create-blogs','backend.pages.create-blog')->middleware(['auth', 'verified'])->name('create-blog');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

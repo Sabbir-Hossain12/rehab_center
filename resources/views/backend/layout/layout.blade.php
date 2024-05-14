@@ -35,7 +35,7 @@
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
-             hello
+            
                 @yield('mainContents')
             </div><!--/. container-fluid -->
         </section>
