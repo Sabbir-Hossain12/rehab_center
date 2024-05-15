@@ -2,14 +2,12 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
-
-
-Route::view('blogs','backend.pages.blogs')->middleware(['auth','verified'])->name('blogs');
+use  App\Http\Controllers\Backend\BlogController;
 
 Route::view('dashboard','backend.pages.dashboard')->middleware(['auth', 'verified'])->name('dashboard');
 Route::view('create-blogs','backend.pages.create-blog')->middleware(['auth', 'verified'])->name('create-blog');
 Route::view('booking','backend.pages.booking')->middleware(['auth', 'verified'])->name('booking');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -21,8 +19,19 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 
+Route::group(['prefix' => '/admin'], function () {
 
+    // Blog
+    Route::group(['prefix' => '/blog'], function () {
+        Route::get('/manage', [BlogController::class, 'manage'])->name('blog.manage');
+        Route::get('/create', [BlogController::class, 'create'])->name('blog.create');
+        Route::post('/store', [BlogController::class, 'store'])->name('blog.store');
+        Route::get('/edit/{id}', [BlogController::class, 'edit'])->name('blog.edit');
+        Route::post('/update/{id}', [BlogController::class, 'update'])->name('blog.update');
+        Route::get('/destroy/{id}', [BlogController::class, 'destroy'])->name('blog.destroy');
+    });
 
+});
 
 
 Route::view('/', 'frontend.pages.home')->name('home');
