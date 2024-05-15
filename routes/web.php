@@ -9,6 +9,7 @@ Route::view('blogs','backend.pages.blogs')->middleware(['auth','verified'])->nam
 
 Route::view('dashboard','backend.pages.dashboard')->middleware(['auth', 'verified'])->name('dashboard');
 Route::view('create-blogs','backend.pages.create-blog')->middleware(['auth', 'verified'])->name('create-blog');
+Route::view('booking','backend.pages.booking')->middleware(['auth', 'verified'])->name('booking');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

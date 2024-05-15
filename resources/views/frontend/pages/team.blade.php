@@ -6,7 +6,7 @@
 
 @section('body-content')
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url({{ asset('public/frontend/images/bg_2.jpg') }});" data-stellar-background-ratio="0.5">
+<section class="hero-wrap hero-wrap-2" style="background-image: url({{ asset('public/frontend/images/dream/IMG-20240514-WA0008.jpg') }});" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
       <div class="row no-gutters slider-text align-items-end">
