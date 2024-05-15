@@ -22,7 +22,8 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-md-3 mb-md-0 mb-4 d-flex align-items-center">
-                <a class="navbar-brand" href="index.html">Chiropractic</a>
+                <a class="navbar-brand" href="">Dream House</a>
+             
             </div>
             <div class="col-md-7">
                 <div class="row">
