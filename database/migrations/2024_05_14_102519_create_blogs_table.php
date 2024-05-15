@@ -21,7 +21,8 @@ return new class extends Migration
             $table->string('long_desc')->nullable();
             $table->date('date');
             $table->time('time');
-            
+            $table->integer('status')->default(1)->comment('1=active, 2=inactive');
+
             $table->timestamps();
         });
     }

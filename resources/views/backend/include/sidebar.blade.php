@@ -14,12 +14,9 @@
                 <img src="{{asset('public/backend/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">{{Auth::user()->name}}</a>
+                <a href="#" class="d-block">{{ Auth::user()->name ?? '' }}</a>
             </div>
-  
         </div>
-        
-        
 
         <!-- SidebarSearch Form -->
         <div class="form-inline">
@@ -45,7 +42,6 @@
                             Dashboard
                         </p>
                     </a>
-                   
                 </li>
 
                 <li class="nav-item">
@@ -58,12 +54,12 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{route('blogs')}}" class="nav-link">
+                            <a href="{{ route('blog.manage') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Manage Blogs</p>
                             </a>
                         </li>
-                     
+
                     </ul>
                 </li>
 
@@ -85,10 +81,10 @@
 
                     </ul>
                 </li>
-           
+
             </ul>
         </nav>
-        
+
         <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->

@@ -14,18 +14,14 @@ return new class extends Migration
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('blog_id');
-            $table->foreign('blog_id')->references('id')->on('blogs')->cascadeOnUpdate();
-            
             $table->string('user_name')->nullable();
-           
             $table->string('user_email')->nullable();
-            
             $table->string('message');
             $table->date('comment_date');
             $table->time('comment_time');
-        
-
             $table->timestamps();
+
+            $table->foreign('blog_id')->references('id')->on('blogs')->cascadeOnUpdate();
         });
     }
 

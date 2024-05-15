@@ -19,44 +19,44 @@
         </div><!-- /.container-fluid -->
     </div>
 
-
-
 @endsection
 
 @section('mainContents')
 
-    <form>
+    <form method="POST" action="{{ route('blog.store') }}" enctype="multipart/form-data">
+        @csrf
+
         <div class="card-body">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Blog Title</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Title">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Short Description</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Short Description">
-            </div>
-            
-            
-            
-            <div class="form-group">
-                <label for="exampleInputFile">File input</label>
-                <div class="input-group">
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose image</label>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Title">Blog Title</label>
+                        <input type="text" class="form-control" name="title" id="Title" placeholder="Enter Title">
                     </div>
-                    <div class="input-group-append">
-                        <span class="input-group-text">Upload</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="Thumbnail" class="form-label">Blog Thumbnail</label>
+                        <input class="form-control" type="file" name="thumbnail" id="Thumbnail">
                     </div>
                 </div>
             </div>
 
-         <div class="form-group" style="color: #0a0e14">
-             <label for="summernote" style="color: #fff">Long Description </label>
-                <textarea class="" id="summernote" name="editordata"></textarea>
-         </div>
+
+            <div class="form-group" style="color: #0a0e14">
+                <label for="summernote">Long Description </label>
+                <textarea class="" id="summernote" name="description"></textarea>
+            </div>
+
+            <div class="col-md-12">
+               <select class="form-control" name="status">
+                  <option selected disabled>Open this status menu</option>
+                  <option value="1">Active</option>
+                  <option value="2">Inactive</option>
+              </select>
+            </div>
         </div>
-        <!-- /.card-body -->
 
         <div class="card-footer">
             <button type="submit" class="btn btn-primary">Submit</button>
