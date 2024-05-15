@@ -55,7 +55,7 @@
             <div class="row justify-content-center pb-5 mb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
                     <span class="subheading">We offer Services</span>
-                    <h2>Our Benefits</h2>
+                    <h2>Our Treatments</h2>
                 </div>
             </div>
             <div class="row">
@@ -68,71 +68,8 @@
                         </div>
 
                         <div class="media-body px-2">
-                            <h3 class="heading">Spinal Manupulation</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                unorthographic.</p>
-                            <p><a href="#" class="btn-custom">Read more</a></p>
-                        </div>
-                    </div>
-
-
-                    <div class="reheb_service_benefits d-block">
-                        <div class="top_border"></div>
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="flaticon-acupuncture"></span>
-                        </div>
-
-                        <div class="media-body px-2">
-                            <h3 class="heading">Medical Acupuncture</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                unorthographic.</p>
-                            <p><a href="#" class="btn-custom">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4 services ftco-animate">
-                    <div class="reheb_service_benefits d-block">
-                        <div class="top_border"></div>
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="flaticon-electrotherapy"></span>
-                        </div>
-
-                        <div class="media-body px-2">
-                            <h3 class="heading">Electrotherapy</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                unorthographic.</p>
-                            <p><a href="#" class="btn-custom">Read more</a></p>
-                        </div>
-                    </div>
-
-                    <div class="reheb_service_benefits d-block">
-                        <div class="top_border"></div>
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="flaticon-examination"></span>
-                        </div>
-
-                        <div class="media-body px-2">
-                            <h3 class="heading">Therapeutic Exercise</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                unorthographic.</p>
-                            <p><a href="#" class="btn-custom">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 services ftco-animate">
-                    <div class="reheb_service_benefits d-block">
-                        <div class="top_border"></div>
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="flaticon-lymph-nodes"></span>
-                        </div>
-
-                        <div class="media-body px-2">
-                            <h3 class="heading">Manual Lympahtic</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                unorthographic.</p>
+                            <h3 class="heading">Drug Testing </h3>
+                            <p>Prerequisite to assess the drug abuse in prilimiry stage of drug addiction treatment. The treatment plan is designed on the basis of drug abuse.</p>
                             <p><a href="#" class="btn-custom">Read more</a></p>
                         </div>
                     </div>
@@ -144,12 +81,49 @@
                         </div>
 
                         <div class="media-body px-2">
-                            <h3 class="heading">Joint Mobilization</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                unorthographic.</p>
+                            <h3 class="heading">Aftercare Treatment </h3>
+                            <p>A continuing care is offered in a structured manner where a person enjoy the progress after completing a formal addiction treatment program. </p>
                             <p><a href="#" class="btn-custom">Read more</a></p>
                         </div>
                     </div>
+
+
+                 
+                </div>
+
+
+                <div class="col-md-4 services ftco-animate">
+                    <div class="reheb_service_benefits d-block">
+                        <div class="top_border"></div>
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="flaticon-electrotherapy"></span>
+                        </div>
+
+                        <div class="media-body px-2">
+                            <h3 class="heading">Inpatient Treatment </h3>
+                            <p>Residential treatment programs at Dream House provide patients with a monitored, supportive environment for the duration of their recovery.</p>
+                            <p><a href="#" class="btn-custom">Read more</a></p>
+                        </div>
+                    </div>
+
+                 
+                </div>
+
+                <div class="col-md-4 services ftco-animate">
+                    <div class="reheb_service_benefits d-block">
+                        <div class="top_border"></div>
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="flaticon-lymph-nodes"></span>
+                        </div>
+
+                        <div class="media-body px-2">
+                            <h3 class="heading">Outpatient Treatment </h3>
+                            <p>Outpatient programs at Dream House enable patients to continue working and commuting with their families during an inpatient stay in healthy process.</p>
+                            <p><a href="#" class="btn-custom">Read more</a></p>
+                        </div>
+                    </div>
+
+                 
                 </div>
             </div>
         </div>
