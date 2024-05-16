@@ -20,7 +20,7 @@
                                 <p>We offer a structured environment where individuals can receive medical,
                                     psychological, and therapeutic support to address their challenges and work towards
                                     recovery. </p>
-                                <p><a href="#" class="btn btn-primary">Book an appointment</a></p>
+                                <p><a href="{{route('contact')}}" class="btn btn-primary">Contact Us</a></p>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                                 <p>We offer a structured environment where individuals can receive medical,
                                     psychological, and therapeutic support to address their challenges and work towards
                                     recovery.</p>
-                                <p><a href="#" class="btn btn-primary">Book an appointment</a></p>
+                                <p><a href="{{route('contact')}}" class="btn btn-primary">Contact Us</a></p>
                             </div>
                         </div>
                     </div>
@@ -586,116 +586,94 @@
     </section>
     <!-- Galary Section end -->
 
-    <!-- Appointment section Start -->
-    <section class="ftco-appointment ftco-section ftco-no-pt ftco-no-pb">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row d-md-flex justify-content-center">
-                <div class="col-md-12">
-                    <div class="wrap-appointment d-md-flex">
-                        <div class="col-md-8 bg-primary p-5 heading-section heading-section-white">
-                            <span class="subheading">Booking an Appointment</span>
-                            <h2 class="mb-4">Free Consultation</h2>
-                            <form action="#" class="appointment">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Your Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Phone number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="form-field">
-                                                <div class="select-wrap">
-                                                    <div class="icon"><span class="fa fa-chevron-down"></span></div>
-                                                    <select name="" id="" class="form-control">
-                                                        <option value="">Select Services</option>
-                                                        <option value="">Spinal Manupulation</option>
-                                                        <option value="">Electrotherapy</option>
-                                                        <option value="">Manual Lymphatic</option>
-                                                        <option value="">Medical Acupuncture</option>
-                                                        <option value="">Therapeutic Exercise</option>
-                                                        <option value="">Joint Mobilization</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="form-field">
-                                                <div class="select-wrap">
-                                                    <div class="icon"><span class="fa fa-chevron-down"></span></div>
-                                                    <select name="" id="" class="form-control">
-                                                        <option value="">Select Chiropractor</option>
-                                                        <option value="">John Doe</option>
-                                                        <option value="">William Smith</option>
-                                                        <option value="">Danny Green</option>
-                                                        <option value="">Jason Thompson</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="input-wrap">
-                                                <div class="icon"><span class="fa fa-calendar"></span></div>
-                                                <input type="text" class="form-control appointment_date"
-                                                       placeholder="Date">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="input-wrap">
-                                                <div class="icon"><span class="fa fa-clock-o"></span></div>
-                                                <input type="text" class="form-control appointment_time"
-                                                       placeholder="Time">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="submit" value="Send message"
-                                                   class="btn btn-secondary py-3 px-4">
-                                        </div>
+    <!-- Contact Us section Start -->
+    <div class="col-12 justify-content-center">
+        <div class="wrapper">
+            <div class="row no-gutters">
+                <div class="col-md-7 d-flex">
+                    <div class="contact-wrap w-100 p-md-5 p-4">
+                        <h3 class="mb-4">Get in touch</h3>
+
+                        <form method="POST" action="{{ route('contact.us') }}" id="contactForm" class="contactForm">
+                            @csrf
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
                                     </div>
                                 </div>
-                            </form>
-                        </div>
-                        <div class="col-md-4 bg-white text-center p-5">
-                            <div class="desc border-bottom pb-4">
-                                <h2>Business Hours</h2>
-                                <div class="opening-hours">
-                                    <h4>Opening Days:</h4>
-                                    <p class="pl-3">
-                                        <span><strong>Monday – Friday:</strong> 9am to 20 pm</span>
-                                        <span><strong>Saturday :</strong> 9am to 17 pm</span>
-                                    </p>
-                                    <h4>Vacations:</h4>
-                                    <p class="pl-3">
-                                        <span>All Sunday Days</span>
-                                        <span>All Official Holidays</span>
-                                    </p>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" value="Send Message" class="btn btn-primary">
+                                        <div class="submitting"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="desc pt-4 ">
-                                <h3 class="heading">For Emergency Cases</h3>
-                                <span class="phone">(+01) 123 456 7890</span>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex align-items-stretch">
+                    <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+                        <h3 class="mb-4 mt-md-4">Contact us</h3>
+                        <div class="dbox w-100 d-flex align-items-start">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-map-marker"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <p><span>Address:</span> 1/2 Surabari.ShoilBari Road,Ward Np-6,Kashimpur,Gazipur</p>
+                            </div>
+                        </div>
+                        <div class="dbox w-100 d-flex align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-phone"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <p><span>Phone:</span> <a href="tel://1234567920">01973515171, 01908459216</a></p>
+                            </div>
+                        </div>
+                        <div class="dbox w-100 d-flex align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-paper-plane"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                            </div>
+                        </div>
+                        <div class="dbox w-100 d-flex align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-globe"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <p><span>Website</span> <a href="#">yoursite.com</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Appointment section end -->
+    </div>
+    <!-- Contact Us -->
 
     <!-- Blog section Start -->
     <section class="ftco-section">
@@ -708,10 +686,10 @@
             </div>
 
             <div class="row d-flex">
-                @foreach ( App\Models\Blog::where('status', 1)->orderBy('id', 'desc')->get(); as $blog )
+                @foreach ( App\Models\Blog::where('status', 1)->orderBy('id', 'desc')->limit(6)->get(); as $blog )
                     <div class="col-md-4 ftco-animate">
                         <div class="blog-entry align-self-stretch">
-                            <a href="blog-single.html" class="block-20 rounded"
+                            <a href="{{ route('single.blog', $blog->id) }}" class="block-20 rounded"
                             style="background-image: url({{ asset( $blog->img ) }}); width: 100%">
                             </a>
                             <div class="text mt-3">
@@ -725,6 +703,7 @@
                                 </div>
                                 <h3 class="heading"><a href="{{ route('single.blog', $blog->id) }}">{{ $blog->title }}</a>
                                 </h3>
+                              
                             </div>
                         </div>
                     </div>

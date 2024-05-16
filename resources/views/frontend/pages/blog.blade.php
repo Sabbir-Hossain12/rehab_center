@@ -23,10 +23,10 @@
     <div class="container">
       <div class="row">
 
-           @foreach ( App\Models\Blog::where('status', 1)->orderBy('id', 'desc')->get(); as $blog )
+           @foreach ( App\Models\Blog::where('status', 1)->orderBy('id', 'desc')->SimplePaginate(6) as $blog )
             <div class="col-md-4 ftco-animate">
                 <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20 rounded"
+                    <a href="{{ route('single.blog', $blog->id) }}" class="block-20 rounded"
                     style="background-image: url({{ asset( $blog->img ) }}); width: 100%">
                     </a>
                     <div class="text mt-3">
@@ -43,10 +43,17 @@
                     </div>
                 </div>
             </div>
+          
           @endforeach
+
+               <div>
+                   {{ App\Models\Blog::where('status', 1)->orderBy('id', 'desc')->simplePaginate(6)->links() }}
+
+               </div>
 
        </div>
     </div>
+  
 </section>
 <!-- Blog Post section end -->
 

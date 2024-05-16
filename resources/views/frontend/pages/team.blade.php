@@ -23,7 +23,7 @@
         <div class="row no-gutters justify-content-center pb-5 mb-3">
             <div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
                 <span class="subheading">Team &amp; Staff</span>
-                <h2>Our Experts Chiropractor / Therapist</h2>
+                <h2>Our Expert Doctors</h2>
             </div>
         </div>
 
