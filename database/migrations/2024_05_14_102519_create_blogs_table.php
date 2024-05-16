@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->text('img')->nullable();
             $table->string('posted_by')->nullable();
-            $table->string('short_desc')->nullable();
-            $table->string('long_desc')->nullable();
+            $table->text('short_desc')->nullable();
+            $table->text('long_desc')->nullable();
             $table->date('date');
             $table->time('time');
             $table->integer('status')->default(1)->comment('1=active, 2=inactive');
