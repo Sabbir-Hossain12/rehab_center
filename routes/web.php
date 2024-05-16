@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\GellaryController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\Backend\BlogController;
@@ -37,6 +38,13 @@ Route::group(['prefix' => '/admin'], function () {
     Route::post('/contact-us', [ContactController::class, 'contactUs'])->name('contact.us');
     Route::get('/contact-manage', [ContactController::class, 'manage'])->name('contact.manage');
     Route::get('/destroy/{id}', [ContactController::class, 'destroy'])->name('contact.destroy');
+
+    Route::group(['prefix' => '/gallery'], function () {
+        Route::get('/manage', [GellaryController::class, 'manage'])->name('gallery.manage');
+        Route::get('/create', [GellaryController::class, 'create'])->name('gallery.create');
+        Route::post('/store', [GellaryController::class, 'store'])->name('gallery.store');
+        
+    });
 });
 
 
