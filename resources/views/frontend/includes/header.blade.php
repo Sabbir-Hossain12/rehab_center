@@ -1,29 +1,11 @@
-{{--<div class="top py-1">--}}
-{{--    <div class="container">--}}
-{{--        <div class="row">--}}
-{{--            <div class="col d-flex align-items-center">--}}
-{{--                <p class="mb-0"><a href="#">chiropractic@email.com</a> | <a href="#">Help Desk</a> | </p>--}}
-{{--            </div>--}}
-{{--            <div class="col-4 d-flex justify-content-end">--}}
-{{--                <div class="social-media">--}}
-{{--                    <p class="mb-0 d-flex">--}}
-{{--                        <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>--}}
-{{--                        <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>--}}
-{{--                        <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>--}}
-{{--                        <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>--}}
-{{--                    </p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
+
 
 <div class="wrap">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-md-3 mb-md-0 mb-4 d-flex align-items-center">
                 <a class="navbar-brand" href="">Dream House</a>
-             
+
             </div>
             <div class="col-md-7">
                 <div class="row">
@@ -50,9 +32,9 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa fa-bars"></span> Menu
         </button>
-        <div class="order-lg-last">
+        {{-- <div class="order-lg-last">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticData">Make an appointment</button>
-        </div>
+        </div> --}}
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item {{ Request::segment(1) === '' ? 'active' : '' }}"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
@@ -70,7 +52,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="staticData" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+{{-- <div class="modal fade" id="staticData" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -160,4 +142,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}

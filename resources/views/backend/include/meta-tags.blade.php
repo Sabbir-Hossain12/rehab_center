@@ -16,4 +16,5 @@
     <link rel="stylesheet" href="{{asset('public/backend/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('public/backend/dist/css/adminlte.min.css')}}">
+    <link rel="stylesheet" href="{{asset('public/backend/dist/css/custom.css')}}">
 </head>

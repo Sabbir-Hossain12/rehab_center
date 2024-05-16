@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('message');
             $table->date('comment_date');
             $table->time('comment_time');
+            $table->integer('status')->default(1)->comment('1=active, 2=inactive');
             $table->timestamps();
 
             $table->foreign('blog_id')->references('id')->on('blogs')->cascadeOnUpdate();

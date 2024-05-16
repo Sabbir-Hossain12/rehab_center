@@ -88,7 +88,7 @@
                     </div>
 
 
-                 
+
                 </div>
 
 
@@ -105,8 +105,6 @@
                             <p><a href="#" class="btn-custom">Read more</a></p>
                         </div>
                     </div>
-
-                 
                 </div>
 
                 <div class="col-md-4 services ftco-animate">
@@ -122,8 +120,6 @@
                             <p><a href="#" class="btn-custom">Read more</a></p>
                         </div>
                     </div>
-
-                 
                 </div>
             </div>
         </div>
@@ -710,64 +706,29 @@
                     <h2>Latest news from our blog</h2>
                 </div>
             </div>
+
             <div class="row d-flex">
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry align-self-stretch">
-                        <a href="blog-single.html" class="block-20 rounded"
-                           style="background-image: url({{ asset('public/frontend/images/image_1.jpg') }});">
-                        </a>
-                        <div class="text mt-3">
-                            <div class="posted mb-3 d-flex">
-                                <div class="img author"
-                                     style="background-image: url({{ asset('public/frontend/images/image_2.jpg') }});"></div>
-                                <div class="desc pl-3">
-                                    <span>Posted by John doe</span>
-                                    <span>24 February 2020</span>
+                @foreach ( App\Models\Blog::where('status', 1)->orderBy('id', 'desc')->get(); as $blog )
+                    <div class="col-md-4 ftco-animate">
+                        <div class="blog-entry align-self-stretch">
+                            <a href="blog-single.html" class="block-20 rounded"
+                            style="background-image: url({{ asset( $blog->img ) }}); width: 100%">
+                            </a>
+                            <div class="text mt-3">
+                                <div class="posted mb-3 d-flex">
+                                    <div class="img author"
+                                        style="background-image: url({{ asset($blog->img) }});"></div>
+                                    <div class="desc pl-3">
+                                        <span>{{ $blog->posted_by }}</span>
+                                        <span>{{ $blog->date }}</span>
+                                    </div>
                                 </div>
+                                <h3 class="heading"><a href="{{ route('single.blog', $blog->id) }}">{{ $blog->title }}</a>
+                                </h3>
                             </div>
-                            <h3 class="heading"><a href="#">What Every Athlete Needs To Know About Injury Recovery</a>
-                            </h3>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry align-self-stretch">
-                        <a href="blog-single.html" class="block-20 rounded"
-                           style="background-image: url('{{ asset('public/frontend/images/image_2.jpg') }}');">
-                        </a>
-                        <div class="text mt-3">
-                            <div class="posted mb-3 d-flex">
-                                <div class="img author"
-                                     style="background-image: url({{ asset('public/frontend/images/image_3.jpg') }});"></div>
-                                <div class="desc pl-3">
-                                    <span>Posted by John doe</span>
-                                    <span>24 February 2020</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">What Every Athlete Needs To Know About Injury Recovery</a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry align-self-stretch">
-                        <a href="blog-single.html" class="block-20 rounded"
-                           style="background-image: url({{ asset('public/frontend/images/image_3.jpg') }});">
-                        </a>
-                        <div class="text mt-3">
-                            <div class="posted mb-3 d-flex">
-                                <div class="img author"
-                                     style="background-image: url({{ asset('public/frontend/images/image_1.jpg') }});"></div>
-                                <div class="desc pl-3">
-                                    <span>Posted by John doe</span>
-                                    <span>24 February 2020</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">What Every Athlete Needs To Know About Injury Recovery</a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

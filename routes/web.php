@@ -3,9 +3,10 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\Backend\BlogController;
+use  App\Http\Controllers\Backend\ContactController;
 
 Route::view('dashboard','backend.pages.dashboard')->middleware(['auth', 'verified'])->name('dashboard');
-Route::view('create-blogs','backend.pages.create-blog')->middleware(['auth', 'verified'])->name('create-blog');
+// Route::view('create-blogs','backend.pages.create-blog')->middleware(['auth', 'verified'])->name('create-blog');
 Route::view('booking','backend.pages.booking')->middleware(['auth', 'verified'])->name('booking');
 
 
@@ -29,8 +30,13 @@ Route::group(['prefix' => '/admin'], function () {
         Route::get('/edit/{id}', [BlogController::class, 'edit'])->name('blog.edit');
         Route::post('/update/{id}', [BlogController::class, 'update'])->name('blog.update');
         Route::get('/destroy/{id}', [BlogController::class, 'destroy'])->name('blog.destroy');
+        Route::get('/{id}', [BlogController::class, 'singleBlog'])->name('single.blog');
+        Route::post('/comment', [BlogController::class, 'singleBlogComment'])->name('single.blog.comment');
     });
 
+    Route::post('/contact-us', [ContactController::class, 'contactUs'])->name('contact.us');
+    Route::get('/contact-manage', [ContactController::class, 'manage'])->name('contact.manage');
+    Route::get('/destroy/{id}', [ContactController::class, 'destroy'])->name('contact.destroy');
 });
 
 

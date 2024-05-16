@@ -1,0 +1,7 @@
+.ck .ck-editor__main{
+    height: 300px !important;
+}
+.ck-blurred,
+.ck-focused{
+    height: 300px !important;
+}
