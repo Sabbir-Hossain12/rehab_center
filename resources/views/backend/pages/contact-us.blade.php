@@ -1,13 +1,12 @@
 @extends('backend.layout.layout')
 
-
 @section('contentHeader')
 
 <div class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0">Blog List</h1>
+                <h1 class="m-0">Contact List</h1>
             </div><!-- /.col -->
 
             <div class="col-sm-6">
@@ -17,17 +16,12 @@
                 </ol>
 
             </div><!-- /.col -->
-            </div>
-
-        <div class="row my-3 mx-1">
-            <div>
-                <a href="{{ route('blog.create') }}" class="btn btn-primary">Create Blogs</a>
-            </div>
         </div>
     </div><!-- /.row -->
 </div><!-- /.container-fluid -->
 
 @endsection
+
 
 @section('mainContents')
 
@@ -55,55 +49,34 @@
                         <thead>
                         <tr>
                             <th>ID</th>
-                            <th>image</th>
-                            <th>Title</th>
-                            <th>Slug</th>
-                            <th>Posted By</th>
-                            <th>Description</th>
-                            <th>Date</th>
-                            <th>Time</th>
-                            <th>Status</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Subject</th>
+                            <th>Message</th>
                             <th>action</th>
                         </tr>
                         </thead>
                         <tbody>
-                            @if ( $blogs->count() === 0 )
+                            @if ( $contacts->count() === 0 )
                                 <tr>
                                     <td colspan="10">
                                         <div class="alert alert-danger text-center" role="alert">
-                                             There is no data here
+                                            There is no data here
                                         </div>
                                     </td>
                                 </tr>
                             @else
-                                @foreach ($blogs as $row => $blog)
+                                @foreach ($contacts as $row => $contact)
                                     <tr>
                                         <td>{{ $row + 1 }}</td>
-                                        <td>
-                                            <img src="{{ asset( $blog->img ) }}" alt="" style="width: 75px;">
-                                        </td>
-                                        <td>{{ $blog->title }}</td>
-                                        <td>{{ $blog->slug }}</td>
-                                        <td>{{ $blog->posted_by }}</td>
-                                        <td>{{ strip_tags($blog->long_desc)}}</td>
-                                        <td>{{ $blog->date }}</td>
-                                        <td>{{ $blog->time }}</td>
-                                        <td>
-                                            @if ( $blog->status == 1 )
-                                               <span class="badge text-bg-primary">Active</span>
-                                            @else
-                                                <span class="badge text-bg-danger">Inactive</span>
-                                            @endif
-                                        </td>
+                                        <td>{{ $contact->name }}</td>
+                                        <td>{{ $contact->email }}</td>
+                                        <td>{{ $contact->subject }}</td>
+                                        <td>{{ $contact->message }}</td>
                                         <td>
                                             <ul class="d-flex justify-content-center align-items-center" style="list-style: none;">
-                                                <li >
-                                                    <a href="{{ route('blog.edit', $blog->id) }}">
-                                                        <button type="button" class="btn btn-primary">Edit</button>
-                                                    </a>
-                                                </li>
                                                 <li style="margin-left: 12px">
-                                                    <a href="{{ route('blog.destroy', $blog->id) }}">
+                                                    <a href="{{ route('contact.destroy', $contact->id) }}">
                                                         <button type="button" class="btn btn-danger">Delete</button>
                                                     </a>
                                                 </li>

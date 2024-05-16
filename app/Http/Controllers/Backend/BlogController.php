@@ -4,10 +4,12 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Blog;
 use Illuminate\Support\Str;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Blog;
+use App\Models\Comment;
+use App\Models\Contact;
 
 class BlogController extends Controller
 {
@@ -38,7 +40,7 @@ class BlogController extends Controller
         if( !is_null( $blog ) ){
             $blog->title       =  $request->title;
             $blog->slug        =  Str::Slug($request->title);
-            $blog->posted_by   =  Auth::user()->name;
+            $blog->posted_by   =  Auth::user()->name ?? 'annonymous';
             $blog->long_desc   =  $request->description;
             $blog->status      =  $request->status;
 
@@ -81,7 +83,7 @@ class BlogController extends Controller
         if( !is_null($blog) ){
             $blog->title       =  $request->title;
             $blog->slug        =  Str::Slug($request->title);
-            $blog->posted_by   =  Auth::user()->name ?? '';
+            $blog->posted_by   =  Auth::user()->name  ?? 'annonymous';
             $blog->long_desc   =  $request->description;
             $blog->status      =  $request->status;
 
@@ -123,4 +125,30 @@ class BlogController extends Controller
             return redirect()->back();
         }
     }
+    public function singleBlog(string $id)
+    {
+        $singleBlog = Blog::find($id);
+
+        return view('backend.pages.blog.single_blog', compact('singleBlog'));
+    }
+
+    public function singleBlogComment(Request $request)
+    {
+        $singleBlogComments = new Comment();
+
+        if( !is_null($singleBlogComments) ){
+            $singleBlogComments->blog_id         =  $request->blog_id;
+            $singleBlogComments->user_name       =  $request->user_name;
+            $singleBlogComments->user_email      =  $request->user_email;
+            $singleBlogComments->message         =  $request->message;
+            $singleBlogComments->comment_date    =  date('d-m-y');
+            $singleBlogComments->comment_time    =  date(now());
+            $singleBlogComments->status          =  1;
+
+            $singleBlogComments->save();
+        }
+
+        return redirect()->back();
+    }
+
 }

@@ -23,136 +23,29 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
-          <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20 rounded" style="background-image: url({{ asset('public/frontend/images/image_1.jpg') }});">
-            </a>
-            <div class="text mt-3">
-                <div class="posted mb-3 d-flex">
-                    <div class="img author" style="background-image: url({{ asset('public/frontend/images/image_2.jpg') }});"></div>
-                    <div class="desc pl-3">
-                        <span>Posted by John doe</span>
-                        <span>24 February 2020</span>
+           @foreach ( App\Models\Blog::where('status', 1)->orderBy('id', 'desc')->get(); as $blog )
+            <div class="col-md-4 ftco-animate">
+                <div class="blog-entry align-self-stretch">
+                    <a href="blog-single.html" class="block-20 rounded"
+                    style="background-image: url({{ asset( $blog->img ) }}); width: 100%">
+                    </a>
+                    <div class="text mt-3">
+                        <div class="posted mb-3 d-flex">
+                            <div class="img author"
+                                style="background-image: url({{ asset($blog->img) }});"></div>
+                            <div class="desc pl-3">
+                                <span>{{ $blog->posted_by }}</span>
+                                <span>{{ $blog->date }}</span>
+                            </div>
+                        </div>
+                        <h3 class="heading"><a href="{{ route('single.blog', $blog->id) }}">{{ $blog->title }}</a>
+                        </h3>
                     </div>
                 </div>
-              <h3 class="heading"><a href="#">What Every Athlete Needs To Know About Injury Recovery</a></h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              <p><a href="#" class="btn btn-primary">Read more</a></p>
             </div>
-          </div>
-        </div>
+          @endforeach
 
-        <div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
-          <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20 rounded" style="background-image: url({{ asset('public/frontend/images/image_2.jpg') }});">
-            </a>
-            <div class="text mt-3">
-                <div class="posted mb-3 d-flex">
-                    <div class="img author" style="background-image: url({{ asset('public/frontend/images/image_3.jpg') }});"></div>
-                    <div class="desc pl-3">
-                        <span>Posted by John doe</span>
-                        <span>24 February 2020</span>
-                    </div>
-                </div>
-              <h3 class="heading"><a href="#">What Every Athlete Needs To Know About Injury Recovery</a></h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              <p><a href="#" class="btn btn-primary">Read more</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
-          <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20 rounded" style="background-image: url({{ asset('public/frontend/images/image_3.jpg') }});">
-            </a>
-            <div class="text mt-3">
-                <div class="posted mb-3 d-flex">
-                    <div class="img author" style="background-image: url({{ asset('public/frontend/images/image_1.jpg') }});"></div>
-                    <div class="desc pl-3">
-                        <span>Posted by John doe</span>
-                        <span>24 February 2020</span>
-                    </div>
-                </div>
-              <h3 class="heading"><a href="#">What Every Athlete Needs To Know About Injury Recovery</a></h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              <p><a href="#" class="btn btn-primary">Read more</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
-          <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20 rounded" style="background-image: url({{ asset('public/frontend/images/image_5.jpg') }});">
-            </a>
-            <div class="text mt-3">
-                <div class="posted mb-3 d-flex">
-                    <div class="img author" style="background-image: url({{ asset('public/frontend/images/image_2.jpg') }});"></div>
-                    <div class="desc pl-3">
-                        <span>Posted by John doe</span>
-                        <span>24 February 2020</span>
-                    </div>
-                </div>
-              <h3 class="heading"><a href="#">What Every Athlete Needs To Know About Injury Recovery</a></h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              <p><a href="#" class="btn btn-primary">Read more</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
-          <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20 rounded" style="background-image: url({{ asset('public/frontend/images/image_4.jpg') }});">
-            </a>
-            <div class="text mt-3">
-                <div class="posted mb-3 d-flex">
-                    <div class="img author" style="background-image: url({{ asset('public/frontend/images/image_3.jpg') }});"></div>
-                    <div class="desc pl-3">
-                        <span>Posted by John doe</span>
-                        <span>24 February 2020</span>
-                    </div>
-                </div>
-              <h3 class="heading"><a href="#">What Every Athlete Needs To Know About Injury Recovery</a></h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              <p><a href="#" class="btn btn-primary">Read more</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
-          <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20 rounded" style="background-image: url({{ asset('public/frontend/images/image_6.jpg') }});">
-            </a>
-            <div class="text mt-3">
-                <div class="posted mb-3 d-flex">
-                    <div class="img author" style="background-image: url({{ asset('public/frontend/images/image_1.jpg') }});"></div>
-                    <div class="desc pl-3">
-                        <span>Posted by John doe</span>
-                        <span>24 February 2020</span>
-                    </div>
-                </div>
-              <h3 class="heading"><a href="#">What Every Athlete Needs To Know About Injury Recovery</a></h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              <p><a href="#" class="btn btn-primary">Read more</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {{-- <div class="row mt-5">
-        <div class="col text-center">
-          <div class="block-27">
-            <ul>
-              <li><a href="#">&lt;</a></li>
-              <li class="active"><span>1</span></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">&gt;</a></li>
-            </ul>
-          </div>
-        </div>
-      </div> --}}
+       </div>
     </div>
 </section>
 <!-- Blog Post section end -->
