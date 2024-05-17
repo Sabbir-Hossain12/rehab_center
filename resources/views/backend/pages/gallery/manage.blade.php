@@ -21,7 +21,7 @@
 
             <div class="row my-3 mx-1">
                 <div>
-                    <a href="{{ route('blog.create') }}" class="btn btn-primary">Add image</a>
+                    <a href="{{ route('gallery.create') }}" class="btn btn-primary">Add image</a>
                 </div>
             </div>
         </div><!-- /.row -->
@@ -35,7 +35,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Responsive Hover Table</h3>
+                    <h3 class="card-title">Here is the list of Gallery Images</h3>
 
                     <div class="card-tools">
                         <div class="input-group input-group-sm" style="width: 150px;">
@@ -62,7 +62,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @if ( $blogs->count() === 0 )
+                        @if ( $data->count() === 0 )
                             <tr>
                                 <td colspan="10">
                                     <div class="alert alert-danger text-center" role="alert">
@@ -71,20 +71,16 @@
                                 </td>
                             </tr>
                         @else
-                            @foreach ($blogs as $row => $blog)
+                            @foreach ($data as $da)
                                 <tr>
-                                    <td>{{ $row + 1 }}</td>
+                                    <td>{{  $loop->iteration }}</td>
                                     <td>
-                                        <img src="{{ asset( $blog->img ) }}" alt="" style="width: 75px;">
+                                        <img src="{{ asset( $da->img_path ) }}" alt="" style="width: 75px;">
                                     </td>
-                                    <td>{{ $blog->title }}</td>
-                                    <td>{{ $blog->slug }}</td>
-                                    <td>{{ $blog->posted_by }}</td>
-                                    <td>{{ strip_tags($blog->long_desc)}}</td>
-                                    <td>{{ $blog->date }}</td>
-                                    <td>{{ $blog->time }}</td>
+                                    <td>{{ $da->title }}</td>
+                                 
                                     <td>
-                                        @if ( $blog->status == 1 )
+                                        @if ( $da->status == 1 )
                                             <span class="badge text-bg-primary">Active</span>
                                         @else
                                             <span class="badge text-bg-danger">Inactive</span>
@@ -93,12 +89,12 @@
                                     <td>
                                         <ul class="d-flex justify-content-center align-items-center" style="list-style: none;">
                                             <li >
-                                                <a href="{{ route('blog.edit', $blog->id) }}">
+                                                <a href="{{ route('gallery.edit', $da->id) }}">
                                                     <button type="button" class="btn btn-primary">Edit</button>
                                                 </a>
                                             </li>
                                             <li style="margin-left: 12px">
-                                                <a href="{{ route('blog.destroy', $blog->id) }}">
+                                                <a href="{{ route('gallery.destroy', $da->id) }}">
                                                     <button type="button" class="btn btn-danger">Delete</button>
                                                 </a>
                                             </li>

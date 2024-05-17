@@ -92,7 +92,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route('contact.manage') }}" class="nav-link">
+                            <a href="{{ route('gallery.manage') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Manage Gallery</p>
                             </a>

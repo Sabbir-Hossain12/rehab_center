@@ -43,7 +43,9 @@ Route::group(['prefix' => '/admin'], function () {
         Route::get('/manage', [GellaryController::class, 'manage'])->name('gallery.manage');
         Route::get('/create', [GellaryController::class, 'create'])->name('gallery.create');
         Route::post('/store', [GellaryController::class, 'store'])->name('gallery.store');
-        
+        Route::get('/edit/{id}', [GellaryController::class, 'edit'])->name('gallery.edit');
+        Route::post('/update/{id}', [GellaryController::class, 'update'])->name('gallery.update');
+        Route::get('/destroy/{id}', [GellaryController::class, 'destroy'])->name('gallery.destroy');
     });
 });
 
