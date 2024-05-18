@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Create Blogs</h1>
+                    <h1 class="m-0">Add Images</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -41,17 +41,19 @@
                         <input class="form-control" type="file" name="thumbnail" id="Thumbnail">
                     </div>
                 </div>
-            </div>
+          
 
 
             
 
             <div class="col-md-12 my-0 py-0">
+                <label class="form-label">Status</label>
                <select class="form-control" name="status">
                   <option selected disabled>Open this status menu</option>
                   <option value="1">Active</option>
                   <option value="0">Inactive</option>
               </select>
+            </div>
             </div>
         </div>
 

@@ -110,4 +110,12 @@ class GellaryController extends Controller
     }
     
     
+    
+    public function galleryList()
+    {
+        $images= Gallery::where('status',1)->get();
+        return view('frontend.pages.gallery',compact('images'));
+    }
+    
+    
 }

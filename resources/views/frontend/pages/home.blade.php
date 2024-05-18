@@ -467,118 +467,22 @@
     <section class="ftco-section ftco-no-pt ftco-no-pb ">
         <div class="container-fluid px-md-0">
             <div class="row no-gutters">
-                <div class="col-md-3 ftco-animate">
-                    <div class="work img d-flex align-items-center"
-                         style="background-image: url({{ asset('public/frontend/images/dream/IMG-20240514-WA0002.jpg')}});">
-                        <a href="{{ asset('public/frontend/images/dream/IMG-20240514-WA0002.jpg')}}"
-                           class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="fa fa-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4 text-center pt-5 mt-5">
-                            <div class="text w-100 mb-3 mt-4">
-                                <h2><a href="#">Dream House</a></h2>
+                @foreach($images as $image)
+                    <div class="col-md-3 ftco-animate">
+                        <div class="work img d-flex align-items-center" style="background-image: url({{ asset($image->img_path)}});">
+                            <a href="" class="icon image-popup d-flex justify-content-center align-items-center">
+                                <span class="fa fa-expand"></span>
+                            </a>
+                            <div class="desc w-100 px-4 text-center pt-5 mt-5">
+                                <div class="text w-100 mb-3 mt-4">
+                                    <h2><a href="#">{{$image->title}}</a></h2>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
 
-                <div class="col-md-3 ftco-animate">
-                    <div class="work img d-flex align-items-center"
-                         style="background-image:url({{ asset('public/frontend/images/dream/IMG-20240514-WA0001.jpg')}});">
-                        <a href="" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="fa fa-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4 text-center pt-5 mt-5">
-                            <div class="text w-100 mb-3 mt-4">
-                                <h2><a href="">Dream House</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 ftco-animate">
-                    <div class="work img d-flex align-items-center"
-                         style="background-image: url({{ asset('public/frontend/images/dream/IMG-20240514-WA0002.jpg')}});">
-                        <a href="" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="fa fa-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4 text-center pt-5 mt-5">
-                            <div class="text w-100 mb-3 mt-4">
-                                <h2><a href="">Dream House</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 ftco-animate">
-                    <div class="work img d-flex align-items-center"
-                         style="background-image: url({{ asset('public/frontend/images/dream/IMG-20240514-WA0003.jpg')}});">
-                        <a href="" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="fa fa-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4 text-center pt-5 mt-5">
-                            <div class="text w-100 mb-3 mt-4">
-                                <h2><a href="">Dream House</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 ftco-animate">
-                    <div class="work img d-flex align-items-center"
-                         style="background-image: url({{ asset('public/frontend/images/dream/IMG-20240514-WA0004.jpg')}});">
-                        <a href="" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="fa fa-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4 text-center pt-5 mt-5">
-                            <div class="text w-100 mb-3 mt-4">
-                                <h2><a href="">Dream House</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 ftco-animate">
-                    <div class="work img d-flex align-items-center"
-                         style="background-image: url({{ asset('public/frontend/images/dream/IMG-20240514-WA0005.jpg')}});">
-                        <a href="" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="fa fa-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4 text-center pt-5 mt-5">
-                            <div class="text w-100 mb-3 mt-4">
-                                <h2><a href="">Dream House</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 ftco-animate">
-                    <div class="work img d-flex align-items-center"
-                         style="background-image:url({{ asset('public/frontend/images/dream/IMG-20240514-WA0006.jpg')}});">
-                        <a href="" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="fa fa-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4 text-center pt-5 mt-5">
-                            <div class="text w-100 mb-3 mt-4">
-                                <h2><a href="">Dream House</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 ftco-animate">
-                    <div class="work img d-flex align-items-center"
-                         style="background-image:url({{ asset('public/frontend/images/dream/IMG-20240514-WA0007.jpg')}});">
-                        <a href="" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="fa fa-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4 text-center pt-5 mt-5">
-                            <div class="text w-100 mb-3 mt-4">
-                                <h2><a href="">Dream House</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        
 
 
             </div>

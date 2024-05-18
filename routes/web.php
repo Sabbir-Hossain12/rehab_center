@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\GellaryController;
+use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\Backend\BlogController;
@@ -46,15 +47,16 @@ Route::group(['prefix' => '/admin'], function () {
         Route::get('/edit/{id}', [GellaryController::class, 'edit'])->name('gallery.edit');
         Route::post('/update/{id}', [GellaryController::class, 'update'])->name('gallery.update');
         Route::get('/destroy/{id}', [GellaryController::class, 'destroy'])->name('gallery.destroy');
+        
     });
 });
 
-
-Route::view('/', 'frontend.pages.home')->name('home');
+//Frontend Pages
+Route::get('/', [HomeController::class,'home'])->name('home');
 Route::view('/about', 'frontend.pages.about')->name('about');
 Route::view('/team', 'frontend.pages.team')->name('team');
 Route::view('/contact', 'frontend.pages.contact')->name('contact');
-Route::view('/gallery', 'frontend.pages.gallery')->name('gallery');
+Route::get('/gallery',[GellaryController::class,'galleryList'] )->name('gallery');
 Route::view('/blog', 'frontend.pages.blog')->name('blog');
 Route::view('/department', 'frontend.pages.department')->name('department');
 Route::view('/service', 'frontend.pages.services')->name('service');
