@@ -41,20 +41,22 @@
                         <input class="form-control" type="file" name="thumbnail" id="Thumbnail">
                     </div>
                 </div>
-            </div>
+           
 
 
-            <div class="form-group" style="color: #0a0e14">
+            <div class="col-md-12" style="color: #0a0e14">
                 <label for="summernote">Long Description </label>
                 <textarea class="" id="summernote" name="description"></textarea>
             </div>
 
-            <div class="col-md-12">
+            <div class="col-md-12 pt-3">
+                <label for="">Status</label>
                <select class="form-control" name="status">
                   <option selected disabled>Open this status menu</option>
                   <option value="1">Active</option>
                   <option value="2">Inactive</option>
               </select>
+            </div>
             </div>
         </div>
 
@@ -67,15 +69,20 @@
 
 
     <script>
-    let jReq;
-    ClassicEditor
-        .create(document.querySelector('#summernote'))
-        .then(newEditor => {
-            jReq = newEditor;
-        })
-        .catch(error => {
-            console.error(error);
-        });
+
+       
+          
+            let jReq;
+            ClassicEditor
+                .create(document.querySelector('#summernote'))
+                .then(newEditor => {
+                    jReq = newEditor;
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+
+       
 
 
 </script>

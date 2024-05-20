@@ -57,9 +57,9 @@
                             <th>ID</th>
                             <th>image</th>
                             <th>Title</th>
-                            <th>Slug</th>
+{{--                            <th>Slug</th>--}}
                             <th>Posted By</th>
-                            <th>Description</th>
+{{--                            <th>Description</th>--}}
                             <th>Date</th>
                             <th>Time</th>
                             <th>Status</th>
@@ -83,9 +83,9 @@
                                             <img src="{{ asset( $blog->img ) }}" alt="" style="width: 75px;">
                                         </td>
                                         <td>{{ $blog->title }}</td>
-                                        <td>{{ $blog->slug }}</td>
+{{--                                        <td>{{ $blog->slug }}</td>--}}
                                         <td>{{ $blog->posted_by }}</td>
-                                        <td>{{ strip_tags($blog->long_desc)}}</td>
+{{--                                        <td>{{ strip_tags($blog->long_desc)}}</td>--}}
                                         <td>{{ $blog->date }}</td>
                                         <td>{{ $blog->time }}</td>
                                         <td>

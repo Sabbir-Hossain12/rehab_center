@@ -10,7 +10,7 @@
 
 @section('body-content')
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url(&quot; {{ asset('public/frontend/images/bg_2.jpg') }} &quot;); background-position: 50% 58.9141px;" data-stellar-background-ratio="0.5">
+<section class="hero-wrap hero-wrap-2" style="background-image: url({{ asset('public/frontend/images/dream/IMG-20240514-WA0008.jpg') }}); background-position: 50% 58.9141px;" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
       <div class="row no-gutters slider-text align-items-end">
@@ -31,8 +31,9 @@
             <img src="{{ asset($singleBlog->img) }}" alt="" class="img-fluid">
           </p>
           <h2 class="mb-3">{{ $singleBlog->title }}</h2>
-          <p>{{ strip_tags($singleBlog->long_desc) }}</p>
-
+            <div>
+          {!! $singleBlog->long_desc !!}
+            </div>
 
           <div class="pt-5 mt-5">
             @if ( $comments->count() > 0 )

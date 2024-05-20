@@ -327,7 +327,7 @@
                                              style="background-image: url({{asset('public/frontend/images/testimonies/one.webp')}})"></div>
                                         <div class="pl-3">
                                             <p class="name">Abdur Kader</p>
-                                            <span class="position">Marketing Manager</span>
+                                            <span class="position">Mirpur,Dhaka</span>
                                         </div>
                                     </div>
                                 </div>
@@ -345,10 +345,10 @@
                                         start this new chapter</p>
                                     <div class="d-flex align-items-center">
                                         <div class="user-img"
-                                             style="background-image: url({{asset('public/frontend/images/person_2.jpg')}})"></div>
+                                             style="background-image: url({{asset('public/frontend/images/testimonies/two.webp')}})"></div>
                                         <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing Manager</span>
+                                            <p class="name">Nazmul Hasan</p>
+                                            <span class="position">Gazipur</span>
                                         </div>
                                     </div>
                                 </div>
@@ -366,10 +366,10 @@
                                         জন্য আশাবাদ নিয়ে যাচ্ছি।</p>
                                     <div class="d-flex align-items-center">
                                         <div class="user-img"
-                                             style="background-image: url({{asset('public/frontend/images/person_3.jpg')}})"></div>
+                                             style="background-image: url({{asset('public/frontend/images/testimonies/three.avif')}})"></div>
                                         <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing Manager</span>
+                                            <p class="name">Alom Al Khokon</p>
+                                            <span class="position">Savar</span>
                                         </div>
                                     </div>
                                 </div>
@@ -387,10 +387,10 @@
                                         জীবনের প্রতি নতুন উদ্দীপনা পেয়েছি।</p>
                                     <div class="d-flex align-items-center">
                                         <div class="user-img"
-                                             style="background-image: url({{asset('public/frontend/images/person_1.jpg')}})"></div>
+                                             style="background-image: url({{asset('public/frontend/images/testimonies/four.webp')}})"></div>
                                         <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing Manager</span>
+                                            <p class="name">Himel Hossain</p>
+                                            <span class="position">Gazipur</span>
                                         </div>
                                     </div>
                                 </div>
@@ -408,10 +408,10 @@
                                         incredible team at Dream House</p>
                                     <div class="d-flex align-items-center">
                                         <div class="user-img"
-                                             style="background-image: url({{asset('public/frontend/images/person_2.jpg')}})"></div>
+                                             style="background-image: url({{asset('public/frontend/images/testimonies/four.webp')}})"></div>
                                         <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing Manager</span>
+                                            <p class="name">Azad Mahmood</p>
+                                            <span class="position">Tongi</span>
                                         </div>
                                     </div>
                                 </div>
