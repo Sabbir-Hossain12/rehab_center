@@ -8076,7 +8076,7 @@ h1, h2, h3, h4, h5,
   padding: 0; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #000000 !important;
+      background: #c3c3c3 !important;
       position: relative;
       top: 0;
       padding: 10px 15px; } }
@@ -8178,7 +8178,7 @@ h1, h2, h3, h4, h5,
           display: none; } }
   .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: #000 !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
@@ -8188,7 +8188,7 @@ h1, h2, h3, h4, h5,
       outline: none !important; }
 
 .navbar-brand {
-  color: #2d3e50;
+  color: #2d3e50 !important;
   font-weight: 700;
   font-size: 22px;
   line-height: 1;

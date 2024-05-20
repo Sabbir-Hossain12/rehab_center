@@ -30,3 +30,123 @@
     }
 }
 
+
+
+/* Pricing Section */
+
+.pricing_section{
+    padding: 100px 0;
+}
+.pricing_plan_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+@media (min-width: 360px) and (max-width: 576px){
+    .pricing_plan_container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px){
+    .pricing_plan_container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px){
+    .pricing_plan_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+.card_container{
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    border-radius: 16px;
+}
+.card_details{
+    padding: 40px 24px 24px;
+    border-bottom: 2px solid #fff;
+}
+.card_title h3{
+    text-align: center;
+    color: #141515;
+    font-size: 23px;
+    font-weight: 600;
+}
+.card_title p{
+    text-align: center;
+    color: #141515;
+    font-size: 20px;
+    font-weight: 600;
+}
+.card_title .pricing{
+    font-size: 2.25rem;
+    color: #e0452f;
+    line-height: 1;
+    font-weight: 700;
+    margin: 32px 0 16px;
+    text-align: center;
+}
+.card_price_description{
+    padding: 40px 24px 24px;
+}
+.card_price_description ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.card_price_description ul .pricing_list{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.card_price_description ul .pricing_list .text-success{
+   margin-right: 10px;
+}
+
+
+.service_description ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.service_description ul .service_list{
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+.service_description ul .service_list .text-success{
+   margin-right: 10px;
+}
+.drug_addic_details{
+    margin-top: 80px;
+}
+
+
+.package_section {
+
+}
+.package_list {
+    padding: 0;
+    list-style: none;
+}
+.package_section h3{
+    color: #000 !important;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 36px;
+    margin-bottom: 20px;
+
+}
+.package_list li{
+    color: #7A7A7A !important;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.border_r{
+    border-right: 2px solid #8D8D8D;
+}

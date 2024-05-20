@@ -299,7 +299,6 @@
     </section>
     <!-- About Section end -->
 
-
     <!-- Success Story Section Start -->
     <section class="ftco-section testimony-section bg-dark">
         <div class="container">
@@ -424,7 +423,6 @@
     </section>
     <!-- Success Story Section end -->
 
-
     <!-- Galary Section Start -->
     <section class="ftco-section ftco-no-pt ftco-no-pb ">
         <div class="container-fluid px-md-0">
@@ -451,102 +449,160 @@
     </section>
     <!-- Galary Section end -->
 
-    <!-- Contact Us section Start -->
-    <div class="col-12 justify-content-center">
-        <div class="wrapper">
-            <div class="row no-gutters">
-                <div class="col-md-7 d-flex">
-                    <div class="contact-wrap w-100 p-md-5 p-4">
-                        <h3 class="mb-4">Get in touch</h3>
-
-                        <form method="POST" action="{{ route('contact.us') }}" id="contactForm" class="contactForm">
-                            @csrf
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="name" id="name"
-                                               placeholder="Name">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" id="email"
-                                               placeholder="Email">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="subject" id="subject"
-                                               placeholder="Subject">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="7"
-                                                  placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="submit" value="Send Message" class="btn btn-primary">
-                                        <div class="submitting"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-
-                    </div>
+    <!-- Pricing Section Start -->
+    <section class="pricing_section">
+        <div class="container">
+            <div class="row no-gutters justify-content-center pb-5 mb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
+                    <span class="subheading">Packages</span>
+                    <h2>Pricing Plan</h2>
                 </div>
-                <div class="col-md-5 d-flex align-items-stretch">
-                    <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
-                        <h3 class="mb-4 mt-md-4">Contact us</h3>
-                        <div class="dbox w-100 d-flex align-items-start">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="fa fa-map-marker"></span>
-                            </div>
-                            <div class="text pl-3">
-                                <p><span>Address:</span> 1/2 Surabari.ShoilBari Road,Ward Np-6,Kashimpur,Gazipur</p>
-                            </div>
-                        </div>
-                        <div class="dbox w-100 d-flex align-items-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="fa fa-phone"></span>
-                            </div>
-                            <div class="text pl-3">
-                                <p><span>Phone:</span> <a href="tel://1234567920">01973515171, 01908459216</a></p>
+            </div>
+
+            <div class="row">
+                <div class="pricing_plan_container">
+                    <div class="card_container">
+                        <div class="card_details">
+                            <div class="card_title">
+                                <h3>PACKAGE 1</h3>
+                                <div class="pricing">
+                                    ৳<span> 20000 / BDT</span>
+                                </div>
+                                <p>Four Month</p>
                             </div>
                         </div>
-                        <div class="dbox w-100 d-flex align-items-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="fa fa-paper-plane"></span>
-                            </div>
-                            <div class="text pl-3">
-                                <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-                            </div>
-                        </div>
-                        <div class="dbox w-100 d-flex align-items-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="fa fa-globe"></span>
-                            </div>
-                            <div class="text pl-3">
-                                <p><span>Website</span> <a href="#">yoursite.com</a></p>
-                            </div>
+
+                        <div class="card_price_description">
+                            <ul>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Accomodations
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Treatment
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Counselling
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Foods
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> TV
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> 10 Bed Sharing
+                                </li>
+                            </ul>
                         </div>
                     </div>
+
+                    <div class="card_container">
+                        <div class="card_details">
+                            <div class="card_title">
+                                <h3>PACKAGE 2</h3>
+                                <div class="pricing">
+                                    ৳<span> 20000 / BDT</span>
+                                </div>
+                                <p>Four Month</p>
+                            </div>
+                        </div>
+
+                        <div class="card_price_description">
+                            <ul>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Accomodations
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Treatment
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Counselling
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Foods
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> TV
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> 3 Bed Sharing
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Superior Room
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Extra Food
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Individual Counselling
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Extra Teaching Facility
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Contact Us -->
+    </section>
+    <!-- Pricing Section end -->
+
+    <!-- package Section start -->
+       <section style="margin-bottom: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="package_section border_r">
+                        <h3>The Package Values <span style="color: #e0452f">INCLUDE</span> the services stated below:</h3>
+
+                        <ol class="package_list">
+                            <li>1. Room Charges and Food</li>
+                            <li>2. Dope test and drug assessment during admission</li>
+                            <li>3. Detoxification, if required</li>
+                            <li>4. Medical treatment, Nursing and Supervision of skilled attendants</li>
+                            <li>5. Individual Counseling Sessions</li>
+                            <li>6. Group therapy session by Addiction Counselors & Psychologists</li>
+                            <li>7. Yoga & Meditation</li>
+                            <li>8. Attending NA meeting weekly</li>
+                            <li>9. Weekly outing program to theme parks</li>
+                            <li>10. Weekly Support Group Program</li>
+                            <li>11. Family counseling sessions as required</li>
+                            <li>12. Religious spiritual lecture program monthly</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="package_section">
+                        <h3>Other Charges <span style="color: #e0452f">EXCLUDING </span> stated below: the Package Value:</h3>
+
+                        <ol class="package_list">
+                            <li>1. All necessary diagnostic charges</li>
+                            <li>2. Medicines & medical items</li>
+                            <li>3. Specialized medical consultancy</li>
+                            <li>4. Breakage of any property of OmegaPoint</li>
+                            <li>5. Special ambulatory service charge depending on team & time involved, transport cost</li>
+                            <li>6. Cost of escorting, if required</li>
+                            <li>7. Necessary Dope test</li>
+                            <li>8. Personal laundry salon services, etc.</li>
+                            <li>9. Personal extra expense</li>
+                            <li>10. Service charge @10 of package value</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <p style="color: #000; font-weight: 900; font-size: 20px; text-align: center; margin-top: 80px" ><span style="color: #e0452f">*</span>If the patient is discharged from the center before the due date, Guardian must have to pay the full amount of the contract." Dream House the treatment support and rehabilitation center for addicts We provide treatment for Drug Addiction and Addiction related mental disorders.<span style="color: #e0452f">*</span></p>
+            </div>
+        </div>
+       </section>
+    <!-- package Section end -->
 
     <!-- Blog section Start -->
- 
-    <section class="ftco-section">
+    <section class="">
         <div class="container">
             <div class="row justify-content-center pb-5 mb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
@@ -574,7 +630,6 @@
                                 <h3 class="heading"><a
                                             href="{{ route('single.blog', $blog->id) }}">{{ $blog->title }}</a>
                                 </h3>
-
                             </div>
                         </div>
                     </div>
@@ -583,6 +638,104 @@
         </div>
     </section>
     <!-- Blog section end -->
+
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div style="width: 100%">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.3363676855906!2d90.36644937602412!3d23.806635086613742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d68d0d6f35%3A0xca4252732bab77bc!2sShah%20Ali%20Plaza%2C%20Mirpur%2010%20Roundabout%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1715599378614!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="wrapper">
+                        <div class="row no-gutters">
+                            <div class="col-md-7 d-flex">
+                                <div class="contact-wrap w-100 p-md-5 p-4">
+                                    <h3 class="mb-4">Get in touch</h3>
+
+                                    <form method="POST" action="http://localhost/rehab_center/admin/contact-us" id="contactForm" class="contactForm">
+                                        <input type="hidden" name="_token" value="riZQkbFtUmSu5ZE4rBUtojICMxDhWUpNe4ZAiVvC" autocomplete="off">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="submit" value="Send Message" class="btn btn-primary">
+                                                    <div class="submitting"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="col-md-5 d-flex align-items-stretch">
+                                <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+                                    <h3 class="mb-4 mt-md-4">Contact us</h3>
+                            <div class="dbox w-100 d-flex align-items-start">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="fa fa-map-marker"></span>
+                                </div>
+                                <div class="text pl-3">
+                                <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                                </div>
+                            </div>
+                            <div class="dbox w-100 d-flex align-items-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="fa fa-phone"></span>
+                                </div>
+                                <div class="text pl-3">
+                                <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                                </div>
+                            </div>
+                            <div class="dbox w-100 d-flex align-items-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="fa fa-paper-plane"></span>
+                                </div>
+                                <div class="text pl-3">
+                                <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                                </div>
+                            </div>
+                            <div class="dbox w-100 d-flex align-items-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="fa fa-globe"></span>
+                                </div>
+                                <div class="text pl-3">
+                                <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 @endsection
 

@@ -47,9 +47,10 @@ Route::group(['prefix' => '/admin'], function () {
         Route::get('/edit/{id}', [GellaryController::class, 'edit'])->name('gallery.edit');
         Route::post('/update/{id}', [GellaryController::class, 'update'])->name('gallery.update');
         Route::get('/destroy/{id}', [GellaryController::class, 'destroy'])->name('gallery.destroy');
-        
+
     });
 });
+
 
 //Frontend Pages
 Route::get('/', [HomeController::class,'home'])->name('home');
@@ -57,6 +58,7 @@ Route::view('/about', 'frontend.pages.about')->name('about');
 Route::view('/team', 'frontend.pages.team')->name('team');
 Route::view('/contact', 'frontend.pages.contact')->name('contact');
 Route::get('/gallery',[GellaryController::class,'galleryList'] )->name('gallery');
+Route::view('/pricing-plan', 'frontend.pages.pricing-plan')->name('pricing-plan');
 Route::view('/blog', 'frontend.pages.blog')->name('blog');
 Route::view('/department', 'frontend.pages.department')->name('department');
 Route::view('/service', 'frontend.pages.services')->name('service');

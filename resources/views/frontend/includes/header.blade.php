@@ -1,6 +1,6 @@
 
 
-<div class="wrap">
+<div class="wrap d-lg-block d-md-none d-sm-none d-none">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-md-3 mb-md-0 mb-4 d-flex align-items-center">
@@ -30,7 +30,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fa fa-bars"></span> Menu
+            <span class="fa fa-bars"></span>
+             <a class="navbar-brand" href="">Dream House</a>
         </button>
         {{-- <div class="order-lg-last">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticData">Make an appointment</button>
@@ -43,6 +44,7 @@
                 <li class="nav-item {{ Request::segment(1) === 'service' ? 'active' : '' }}"><a href="{{ route('service') }}" class="nav-link">Services</a></li>
                 <li class="nav-item {{ Request::segment(1) === 'department' ? 'active' : '' }}"><a href="{{ route('department') }}" class="nav-link">Departments</a></li>
                 <li class="nav-item {{ Request::segment(1) === 'gallery' ? 'active' : '' }}"><a href="{{ route('gallery') }}" class="nav-link">Gallery</a></li>
+                <li class="nav-item {{ Request::segment(1) === 'pricing-plan' ? 'active' : '' }}"><a href="{{ route('pricing-plan') }}" class="nav-link">Pricing Plan</a></li>
                 <li class="nav-item {{ Request::segment(1) === 'blog' ? 'active' : '' }}"><a href="{{ route('blog') }}" class="nav-link">Blog</a></li>
                 <li class="nav-item {{ Request::segment(1) === 'contact' ? 'active' : '' }}"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
             </ul>
