@@ -128,7 +128,236 @@
         </div>
     </section>
     <!-- Service Section end -->
+    
+{{--why chose us? Start--}}
 
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 text-center heading-section ftco-animate fadeInUp ftco-animated">
+                    <span class="subheading">Services</span>
+                    <h2 class="mb-4">Why Choose Us?</h2>
+                </div>
+            </div>
+
+            <div class="row tabulation mt-4 ftco-animate fadeInUp ftco-animated">
+                <div class="col-md-6 d-flex order-md-last">
+                    <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center mb-4 mb-sm-0"
+                         style="background-image:url({{ asset('public/frontend/images/dream/IMG-20240514-WA0014.jpg') }});">
+                    </div>
+                </div>
+
+                <div class="col-md-6 pr-md-5 py-md-5">
+                    <div class="row justify-content-start pb-5">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <h2 class="mb-4">Our Services</h2>
+                            <p style="font-size: 16px; margin: 0;">We offer a structured environment where individuals can receive medical, psychological,
+                                and
+                                therapeutic support to address their challenges and work towards recovery. Treatment
+                                programs typically include detoxification, counseling, group therapy, education on
+                                addiction and coping strategies, as well as aftercare planning to support long-term
+                                sobriety and wellness. Rehab centers may specialize in treating specific types of
+                                addictions or cater to a broader range of substance abuse issues.</p>
+                        </div>
+                    </div>
+
+                    <div class="service_description">
+                        <ul>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Room charges & food
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Basic medical advice, nursing and supervision of skilled attendents.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Individual counseling sessions.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Yoga & Meditation.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Attending N/A meeting weekly.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Outing and recreational programs.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Weekly support group program.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Physical excercise & training by gym instructor.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Religious spiritual lecture program.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- services Section end -->
+
+            <div class="drug_addic_details" style="">
+                <h5 style="font-size: 17px; margin: 0; "><strong>Understanding Drug Addiction in Bangladesh:</strong></h5>
+                <p style="text-indent: 15%; font-size: 17px; margin-top: 20px;">------ Drug addiction, also known as substance use disorder, is a chronic disease characterized by companies drug-seeking and use, despite harmful consequences. In Bangladesh, drug addiction has become a major issue, affecting indeviduals from all walks of life.It is crucial to have a comprehensive understanding of this problem in  order to address it effectively. </p>
+            </div>
+
+        </div>
+    </section>
+    
+{{--why chose us? End--}}
+    
+    
+    <!-- Pricing Section Start -->
+    <section class="pricing_section">
+        <div class="container">
+            <div class="row no-gutters justify-content-center pb-5 mb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
+                    <span class="subheading">Packages</span>
+                    <h2>Pricing Plan</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="pricing_plan_container">
+                    <div class="card_container">
+                        <div class="card_details">
+                            <div class="card_title">
+                                <h3>PACKAGE 1</h3>
+                                <div class="pricing">
+                                    ৳<span> 20000 / BDT</span>
+                                </div>
+                                <p>Four Month</p>
+                            </div>
+                        </div>
+
+                        <div class="card_price_description">
+                            <ul>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Accomodations
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Treatment
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Counselling
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Foods
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> TV
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> 10 Bed Sharing
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card_container">
+                        <div class="card_details">
+                            <div class="card_title">
+                                <h3>PACKAGE 2</h3>
+                                <div class="pricing">
+                                    ৳<span> 20000 / BDT</span>
+                                </div>
+                                <p>Four Month</p>
+                            </div>
+                        </div>
+
+                        <div class="card_price_description">
+                            <ul>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Accomodations
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Treatment
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Counselling
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Foods
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> TV
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> 3 Bed Sharing
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Superior Room
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Extra Food
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Individual Counselling
+                                </li>
+                                <li class="pricing_list">
+                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Extra Teaching Facility
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section end -->
+
+    <!-- package Section start -->
+    <section style="margin-bottom: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="package_section border_r">
+                        <h3>The Package Values <span style="color: #e0452f">INCLUDE</span> the services stated below:</h3>
+
+                        <ol class="package_list">
+                            <li>1. Room Charges and Food</li>
+                            <li>2. Dope test and drug assessment during admission</li>
+                            <li>3. Detoxification, if required</li>
+                            <li>4. Medical treatment, Nursing and Supervision of skilled attendants</li>
+                            <li>5. Individual Counseling Sessions</li>
+                            <li>6. Group therapy session by Addiction Counselors & Psychologists</li>
+                            <li>7. Yoga & Meditation</li>
+                            <li>8. Attending NA meeting weekly</li>
+                            <li>9. Weekly outing program to theme parks</li>
+                            <li>10. Weekly Support Group Program</li>
+                            <li>11. Family counseling sessions as required</li>
+                            <li>12. Religious spiritual lecture program monthly</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="package_section">
+                        <h3>Other Charges <span style="color: #e0452f">EXCLUDING </span> stated below: the Package Value:</h3>
+
+                        <ol class="package_list">
+                            <li>1. All necessary diagnostic charges</li>
+                            <li>2. Medicines & medical items</li>
+                            <li>3. Specialized medical consultancy</li>
+                            <li>4. Breakage of any property of OmegaPoint</li>
+                            <li>5. Special ambulatory service charge depending on team & time involved, transport cost</li>
+                            <li>6. Cost of escorting, if required</li>
+                            <li>7. Necessary Dope test</li>
+                            <li>8. Personal laundry salon services, etc.</li>
+                            <li>9. Personal extra expense</li>
+                            <li>10. Service charge @10 of package value</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <p style="color: #000; font-weight: 900; font-size: 20px; text-align: center; margin-top: 80px" ><span style="color: #e0452f">*</span>If the patient is discharged from the center before the due date, Guardian must have to pay the full amount of the contract." Dream House the treatment support and rehabilitation center for addicts We provide treatment for Drug Addiction and Addiction related mental disorders.<span style="color: #e0452f">*</span></p>
+            </div>
+        </div>
+    </section>
+    <!-- package Section end -->
 
     <!-- Team Section Start -->
     <section class="ftco-section ftco-no-pb ftco-no-pt">
@@ -449,160 +678,10 @@
     </section>
     <!-- Galary Section end -->
 
-    <!-- Pricing Section Start -->
-    <section class="pricing_section">
-        <div class="container">
-            <div class="row no-gutters justify-content-center pb-5 mb-3">
-                <div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
-                    <span class="subheading">Packages</span>
-                    <h2>Pricing Plan</h2>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="pricing_plan_container">
-                    <div class="card_container">
-                        <div class="card_details">
-                            <div class="card_title">
-                                <h3>PACKAGE 1</h3>
-                                <div class="pricing">
-                                    ৳<span> 20000 / BDT</span>
-                                </div>
-                                <p>Four Month</p>
-                            </div>
-                        </div>
-
-                        <div class="card_price_description">
-                            <ul>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Accomodations
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Treatment
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Counselling
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Foods
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> TV
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> 10 Bed Sharing
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="card_container">
-                        <div class="card_details">
-                            <div class="card_title">
-                                <h3>PACKAGE 2</h3>
-                                <div class="pricing">
-                                    ৳<span> 20000 / BDT</span>
-                                </div>
-                                <p>Four Month</p>
-                            </div>
-                        </div>
-
-                        <div class="card_price_description">
-                            <ul>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Accomodations
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Treatment
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Counselling
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Foods
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> TV
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> 3 Bed Sharing
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Superior Room
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Extra Food
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Individual Counselling
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Extra Teaching Facility
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Pricing Section end -->
-
-    <!-- package Section start -->
-       <section style="margin-bottom: 80px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="package_section border_r">
-                        <h3>The Package Values <span style="color: #e0452f">INCLUDE</span> the services stated below:</h3>
-
-                        <ol class="package_list">
-                            <li>1. Room Charges and Food</li>
-                            <li>2. Dope test and drug assessment during admission</li>
-                            <li>3. Detoxification, if required</li>
-                            <li>4. Medical treatment, Nursing and Supervision of skilled attendants</li>
-                            <li>5. Individual Counseling Sessions</li>
-                            <li>6. Group therapy session by Addiction Counselors & Psychologists</li>
-                            <li>7. Yoga & Meditation</li>
-                            <li>8. Attending NA meeting weekly</li>
-                            <li>9. Weekly outing program to theme parks</li>
-                            <li>10. Weekly Support Group Program</li>
-                            <li>11. Family counseling sessions as required</li>
-                            <li>12. Religious spiritual lecture program monthly</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="package_section">
-                        <h3>Other Charges <span style="color: #e0452f">EXCLUDING </span> stated below: the Package Value:</h3>
-
-                        <ol class="package_list">
-                            <li>1. All necessary diagnostic charges</li>
-                            <li>2. Medicines & medical items</li>
-                            <li>3. Specialized medical consultancy</li>
-                            <li>4. Breakage of any property of OmegaPoint</li>
-                            <li>5. Special ambulatory service charge depending on team & time involved, transport cost</li>
-                            <li>6. Cost of escorting, if required</li>
-                            <li>7. Necessary Dope test</li>
-                            <li>8. Personal laundry salon services, etc.</li>
-                            <li>9. Personal extra expense</li>
-                            <li>10. Service charge @10 of package value</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <p style="color: #000; font-weight: 900; font-size: 20px; text-align: center; margin-top: 80px" ><span style="color: #e0452f">*</span>If the patient is discharged from the center before the due date, Guardian must have to pay the full amount of the contract." Dream House the treatment support and rehabilitation center for addicts We provide treatment for Drug Addiction and Addiction related mental disorders.<span style="color: #e0452f">*</span></p>
-            </div>
-        </div>
-       </section>
-    <!-- package Section end -->
 
     <!-- Blog section Start -->
-    <section class="">
+    <section class="pt-5">
         <div class="container">
             <div class="row justify-content-center pb-5 mb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
@@ -639,12 +718,13 @@
     </section>
     <!-- Blog section end -->
 
+{{-- Map and Contact us Starts   --}}
     <section class="ftco-section bg-light">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <div style="width: 100%">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.3363676855906!2d90.36644937602412!3d23.806635086613742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d68d0d6f35%3A0xca4252732bab77bc!2sShah%20Ali%20Plaza%2C%20Mirpur%2010%20Roundabout%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1715599378614!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.933074527766!2d90.31139729204881!3d23.962806616765565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755dddc6cfd7809%3A0x76b815e053637a4d!2sDream%20house%20rehabilitation%20Center!5e0!3m2!1sen!2sbd!4v1716204023332!5m2!1sen!2sbd" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
@@ -736,7 +816,7 @@
             </div>
         </div>
     </section>
-
+    {{-- Map and Contact us Ends   --}}
 @endsection
 
 

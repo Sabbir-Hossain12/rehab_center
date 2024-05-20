@@ -23,7 +23,8 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div style="width: 100%">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.3363676855906!2d90.36644937602412!3d23.806635086613742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d68d0d6f35%3A0xca4252732bab77bc!2sShah%20Ali%20Plaza%2C%20Mirpur%2010%20Roundabout%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1715599378614!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.933074527766!2d90.31139729204881!3d23.962806616765565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755dddc6cfd7809%3A0x76b815e053637a4d!2sDream%20house%20rehabilitation%20Center!5e0!3m2!1sen!2sbd!4v1716204023332!5m2!1sen!2sbd" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                 </div>
             </div>
 

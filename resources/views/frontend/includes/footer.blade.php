@@ -30,7 +30,7 @@
                     <h2 class="ftco-heading-2">Contact information</h2>
                     <div class="block-23 mb-3">
                         <ul>
-                            <li><span class="icon fa fa-map-marker"></span><span class="text">1/2 Surabari.ShoilBari Road,Ward Np-6,Kashimpur,Gazipur</span></li>
+                            <li><span class="icon fa fa-map-marker"></span><span class="text">1/2 Surabari.ShoilBari Road,Ward No-6,Kashimpur,Gazipur</span></li>
                             <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">01973515171, 01908459216</span></a></li>
 {{--                            <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">info@yourdomain.com</span></a></li>--}}
                         </ul>

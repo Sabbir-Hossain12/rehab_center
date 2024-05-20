@@ -12,7 +12,7 @@
                     <div class="col-md-8 mb-md-0 mb-3">
                         <div class="top-wrap d-flex">
                             <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-location-arrow"></span></div>
-                            <div class="text"><span>Address</span><span>1/2 Surabari.ShoilBari Road,Ward Np-6,Kashimpur,Gazipur</span></div>
+                            <div class="text"><span>Address</span><span>1/2 Surabari.ShoilBari Road,Ward No-6,Kashimpur,Gazipur</span></div>
                         </div>
                     </div>
                     <div class="col">
