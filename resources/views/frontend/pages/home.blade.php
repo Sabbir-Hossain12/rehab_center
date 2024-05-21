@@ -49,6 +49,144 @@
     <!-- Banner Section End -->
 
 
+
+
+    {{--why chose us? Start--}}
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 text-center heading-section ftco-animate fadeInUp ftco-animated">
+                    <span class="subheading">Services</span>
+                    <h2 class="mb-4">Why Choose Us?</h2>
+                </div>
+            </div>
+
+            <div class="row tabulation mt-4 ftco-animate fadeInUp ftco-animated">
+                <div class="col-md-6 d-flex order-md-last">
+                    <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center mb-4 mb-sm-0"
+                         style="background-image:url({{ asset('public/frontend/images/dream/new/IMG-20240521-WA0012.jpg') }});">
+                    </div>
+                </div>
+
+                <div class="col-md-6 pr-md-5 py-md-5">
+                    <div class="row justify-content-start pb-5">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <h2 class="mb-4">Rehab Center in Dhaka, Bangladesh: Your Path to Recovery from Drug Addiction</h2>
+                            <p style="font-size: 16px; margin: 0;">Dream House Rehabilitation center offer a structured environment where individuals can receive medical, psychological,
+                                and
+                                therapeutic support to address their challenges and work towards recovery. Treatment
+                                programs typically include detoxification, counseling, group therapy, education on
+                                addiction and coping strategies, as well as aftercare planning to support long-term
+                                sobriety and wellness. Rehab centers may specialize in treating specific types of
+                                addictions or cater to a broader range of substance abuse issues.</p>
+                        </div>
+                    </div>
+
+                    <div class="service_description">
+                        <ul>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Room charges & food
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Basic medical advice, nursing and supervision of skilled attendents.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Individual counseling sessions.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Yoga & Meditation.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Attending N/A meeting weekly.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Outing and recreational programs.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Weekly support group program.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Physical excercise & training by gym instructor.
+                            </li>
+                            <li class="service_list">
+                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Religious spiritual lecture program.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- services Section end -->
+
+            <div class="drug_addic_details" style="">
+                <h5 style="font-size: 17px; margin: 0; "><strong>Understanding Drug Addiction in Bangladesh:</strong></h5>
+                <p style="text-indent: 15%; font-size: 17px; margin-top: 20px;">------ Drug addiction, also known as substance use disorder, is a chronic disease characterized by companies drug-seeking and use, despite harmful consequences. In Bangladesh, drug addiction has become a major issue, affecting indeviduals from all walks of life.It is crucial to have a comprehensive understanding of this problem in  order to address it effectively.
+
+                </p>
+
+                <h5>Commonly Abused Drugs</h5>
+                <div class="service_description">
+                    <ul>
+                        <li class="service_list">
+                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>   <strong>Yaba:</strong>  A methamphetamine-based drug, often referred to as "crazy medicine," is widely abused in Bangladesh. It is smuggled primarily from Myanmar and has become a significant problem due to its affordability and availability.
+                        </li>
+                        <li class="service_list">
+                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>   <strong>Heroin:</strong>  Heroin abuse remains prevalent, particularly in urban areas. It is often imported from neighboring countries through illegal channels.
+                        </li>
+                        <li class="service_list">
+                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>   <strong>Phensedyl:</strong>  A codeine-based cough syrup, Phensedyl is frequently abused, especially in border areas. Despite being banned, it is smuggled from India and consumed for its psychoactive effects.
+                        </li>
+                        <li class="service_list">
+                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>   <strong>Cannabis:</strong>  Locally known as "ganja," cannabis is widely used across different social strata. It is cultivated locally and also smuggled into the country.
+                        </li>
+                        <li class="service_list">
+                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>   <strong>Other Prescription Drugs:</strong>  Abuse of prescription drugs like diazepam and tramadol is also on the rise, often obtained without proper medical prescriptions.
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+
+                <div class="service_description py-4">
+                    <h5>Causes of Drug Addiction</h5>
+
+                    <ul>
+                        <li class="service_list">
+                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>   <strong>Socio-Economic Factors:</strong>  Poverty, unemployment, and lack of education are significant drivers of drug abuse. Many individuals, particularly the youth, turn to drugs as a coping mechanism for their socio-economic challenges.
+                        </li>
+                        <li class="service_list">
+                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>   <strong>Peer Pressure:</strong>  Peer influence is a critical factor, especially among teenagers and young adults. The desire to fit in or gain social acceptance can lead individuals to experiment with drugs.
+                        </li>
+                        <li class="service_list">
+                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>   <strong>Mental Health Issues:</strong>  Anxiety, depression, and other mental health disorders can lead individuals to self-medicate with drugs, exacerbating the addiction problem.
+                        </li>
+                        <li class="service_list">
+                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>   <strong>Availability and Accessibility:</strong>  The porous borders with neighboring countries facilitate the easy smuggling of drugs, making them readily available and accessible.
+                        </li>
+                        <li class="service_list">
+                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>   <strong>Lack of Awareness</strong>  Limited awareness and education about the dangers of drug abuse contribute to the growing addiction problem. Many people are unaware of the long-term consequences of drug use.
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+{{--      Image           --}}
+                <div class="overlay text-center py-2">
+                <img src="{{asset('public/frontend/images/dream/new/IMG-20240521-WA0010.jpg')}}" class="shadow-lg rounded text-center img-fluid" style="height: 500px; width: 70%" alt="Dream House">
+                </div>
+               <h2 class="text-center text-success pt-2">Best Rehab Center in Bangladesh</h2>
+                <p class="lh-base fs-5 fw-normal">Dream Rehabilitation Center is known as the “Best Rehab Center in Dhaka, Bangladesh.” Dream House provides caring and effective care to people who are trying to heal from drug abuse. Our skilled and dedicated staff is committed to giving the best recovery services in Dhaka. We make custom treatment plans a top priority as the “Best Rehab Center in Dhaka” to make sure that each person gets the help they need on their way to recovery. Our all-around method at Omega Point Rehabilitation Center treats the physical, emotional, and mental parts of addiction. Our building has all the latest features, which creates a safe and healing space for people to heal and change. Omega Point is known as the Best Rehab Center in Dhaka because it offers therapies, counseling, and holistic wellness programs that are all based on scientific proof and are meant to help people stay clean. You are choosing the Best Rehab Center in Dhaka when you choose Omega Point Rehabilitation Center. The community there is ready to help people get clean and live a life without drugs. Omega Points has a reputation as the Best Rehab Center in Dhaka because we are committed to providing the highest level of care for people who are trying to get better. </p>
+            </div>
+
+        </div>
+    </section>
+
+    {{--why chose us? End--}}
+    
     <!-- Service Section Start -->
     <section class="ftco-section">
         <div class="container">
@@ -128,84 +266,6 @@
         </div>
     </section>
     <!-- Service Section end -->
-    
-{{--why chose us? Start--}}
-
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-8 text-center heading-section ftco-animate fadeInUp ftco-animated">
-                    <span class="subheading">Services</span>
-                    <h2 class="mb-4">Why Choose Us?</h2>
-                </div>
-            </div>
-
-            <div class="row tabulation mt-4 ftco-animate fadeInUp ftco-animated">
-                <div class="col-md-6 d-flex order-md-last">
-                    <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center mb-4 mb-sm-0"
-                         style="background-image:url({{ asset('public/frontend/images/dream/IMG-20240514-WA0014.jpg') }});">
-                    </div>
-                </div>
-
-                <div class="col-md-6 pr-md-5 py-md-5">
-                    <div class="row justify-content-start pb-5">
-                        <div class="col-md-12 heading-section ftco-animate">
-                            <h2 class="mb-4">Our Services</h2>
-                            <p style="font-size: 16px; margin: 0;">We offer a structured environment where individuals can receive medical, psychological,
-                                and
-                                therapeutic support to address their challenges and work towards recovery. Treatment
-                                programs typically include detoxification, counseling, group therapy, education on
-                                addiction and coping strategies, as well as aftercare planning to support long-term
-                                sobriety and wellness. Rehab centers may specialize in treating specific types of
-                                addictions or cater to a broader range of substance abuse issues.</p>
-                        </div>
-                    </div>
-
-                    <div class="service_description">
-                        <ul>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Room charges & food
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Basic medical advice, nursing and supervision of skilled attendents.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Individual counseling sessions.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Yoga & Meditation.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Attending N/A meeting weekly.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Outing and recreational programs.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Weekly support group program.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Physical excercise & training by gym instructor.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Religious spiritual lecture program.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- services Section end -->
-
-            <div class="drug_addic_details" style="">
-                <h5 style="font-size: 17px; margin: 0; "><strong>Understanding Drug Addiction in Bangladesh:</strong></h5>
-                <p style="text-indent: 15%; font-size: 17px; margin-top: 20px;">------ Drug addiction, also known as substance use disorder, is a chronic disease characterized by companies drug-seeking and use, despite harmful consequences. In Bangladesh, drug addiction has become a major issue, affecting indeviduals from all walks of life.It is crucial to have a comprehensive understanding of this problem in  order to address it effectively. </p>
-            </div>
-
-        </div>
-    </section>
-    
-{{--why chose us? End--}}
-    
     
     <!-- Pricing Section Start -->
     <section class="pricing_section">
@@ -374,11 +434,12 @@
                     <div class="staff bg-primary">
                         <div class="img-wrap d-flex align-items-stretch">
                             <div class="img align-self-stretch"
-                                 style="background-image: url({{ asset('public/frontend/images/team/one.jpg') }});"></div>
+                                 style="background-image: url({{ asset('public/frontend/images/team/six.jpg') }});"></div>
                         </div>
                         <div class="text pt-3 px-3 pb-4 text-center">
-                            <h3>S.A. Kokhon Sekh</h3>
-                            <span class="position mb-2">Director & Addiction professional</span>
+                            <h3>Susmita Akter</h3>
+                            <span class="position mb-2">CEO and
+                            Addiction Counselor & Addiction Professional</span>
                             <div class="faded">
                                 <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
 
@@ -387,6 +448,42 @@
                     </div>
                 </div>
 
+                <div class="col-md-4 col-lg ftco-animate d-flex">
+                    <div class="staff bg-primary">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch"
+                                 style="background-image: url({{ asset('public/frontend/images/team/seven.jpg') }});"></div>
+                        </div>
+                        <div class="text pt-3 px-3 pb-4 text-center">
+                            <h3>দেওয়ান মোঃ জালাল উদ্দিন
+
+                            </h3>
+                            <span class="position mb-2">চেয়ারম্যান</span>
+                            <div class="faded">
+                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg ftco-animate d-flex">
+                    <div class="staff bg-primary">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch"
+                                 style="background-image: url({{ asset('public/frontend/images/team/one.jpg') }});"></div>
+                        </div>
+                        <div class="text pt-3 px-3 pb-4 text-center">
+                            <h3>S.A. Kokhon Sekh
+                            </h3>
+                            <span class="position mb-2">Director & Addiction professional</span>
+                            <div class="faded">
+                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="col-md-4 col-lg ftco-animate d-flex">
                     <div class="staff bg-primary">
                         <div class="img-wrap d-flex align-items-stretch">
@@ -423,22 +520,22 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-lg ftco-animate d-flex">
-                    <div class="staff bg-primary">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                 style="background-image: url({{ asset('public/frontend/images/team/four.jpg') }});"></div>
-                        </div>
-                        <div class="text pt-3 px-3 pb-4 text-center">
-                            <h3>Dr. Meharab Hasan
-                            </h3>
-                            <span class="position mb-2">Medicine specialist</span>
-                            <div class="faded">
-                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-md-4 col-lg ftco-animate d-flex">--}}
+{{--                    <div class="staff bg-primary">--}}
+{{--                        <div class="img-wrap d-flex align-items-stretch">--}}
+{{--                            <div class="img align-self-stretch"--}}
+{{--                                 style="background-image: url({{ asset('public/frontend/images/team/four.jpg') }});"></div>--}}
+{{--                        </div>--}}
+{{--                        <div class="text pt-3 px-3 pb-4 text-center">--}}
+{{--                            <h3>Dr. Meharab Hasan--}}
+{{--                            </h3>--}}
+{{--                            <span class="position mb-2">Medicine specialist</span>--}}
+{{--                            <div class="faded">--}}
+{{--                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
                 <div class="col-md-4 col-lg ftco-animate d-flex">
                     <div class="staff bg-primary">

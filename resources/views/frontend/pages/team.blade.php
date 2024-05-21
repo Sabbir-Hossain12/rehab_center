@@ -31,6 +31,52 @@
             <div class="col-md-4 ftco-animate d-flex fadeInUp ftco-animated">
                 <div class="staff bg-primary">
                     <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url({{ asset('public/frontend/images/team/six.jpg') }});"></div>
+                    </div>
+                    <div class="text pt-3 px-3 pb-4 text-center">
+                        <h3>Susmita Akter
+
+                        </h3>
+                        <span class="position mb-2">CEO and Addiction Counselor & Addiction Professional</span>
+                        <div class="faded">
+                            {{--                            <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>--}}
+                            <ul class="ftco-social text-center">
+                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 ftco-animate d-flex fadeInUp ftco-animated">
+                <div class="staff bg-primary">
+                    <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url({{ asset('public/frontend/images/team/seven.jpg') }});"></div>
+                    </div>
+                    <div class="text pt-3 px-3 pb-4 text-center">
+                        <h3>দেওয়ান মোঃ জালাল উদ্দিন
+
+                        </h3>
+                        <span class="position mb-2">চেয়ারম্যান</span>
+                        <div class="faded">
+                            {{--                            <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>--}}
+                            <ul class="ftco-social text-center">
+                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 ftco-animate d-flex fadeInUp ftco-animated">
+                <div class="staff bg-primary">
+                    <div class="img-wrap d-flex align-items-stretch">
                         <div class="img align-self-stretch" style="background-image: url({{ asset('public/frontend/images/team/one.jpg') }});"></div>
                     </div>
                     <div class="text pt-3 px-3 pb-4 text-center">
@@ -49,6 +95,8 @@
                     </div>
                 </div>
             </div>
+            
+          
 
             <div class="col-md-4 ftco-animate d-flex fadeInUp ftco-animated">
                 <div class="staff bg-primary">
