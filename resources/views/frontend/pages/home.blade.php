@@ -9,48 +9,113 @@
     <!-- Banner Section Start -->
     <div class="hero-wrap">
         <div class="home-slider owl-carousel">
+            
+            @foreach($sliders as $slider) 
             <div class="slider-item"
-                 style="background-image:url({{ asset('public/frontend/images/dream/IMG-20240514-WA0019.jpg') }});">
+                 style="background-image:url({{ asset($slider->slider_img) }});">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row no-gutters slider-text align-items-center justify-content-end">
                         <div class="col-md-6 ftco-animate">
                             <div class="text w-100">
-                                <h1 class="mb-4">Welcome to Dream House Rehabilitation Center</h1>
-                                <p>We offer a structured environment where individuals can receive medical,
-                                    psychological, and therapeutic support to address their challenges and work towards
-                                    recovery. </p>
+                                <h1 class="mb-4">{{$slider->slider_title}}</h1>
+                             {!! $slider->slider_desc !!}
                                 <p><a href="{{route('contact')}}" class="btn btn-primary">Contact Us</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            @endforeach
 
-            <div class="slider-item"
-                 style="background-image:url({{ asset('public/frontend/images/dream/IMG-20240514-WA0008.jpg') }});">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row no-gutters slider-text align-items-center justify-content-end">
-                        <div class="col-md-6 ftco-animate">
-                            <div class="text w-100">
-                                <h1 class="mb-4">Welcome to Dream House Rehabilitation Center</h1>
-                                <p style="opacity: 1 !important; ">We offer a structured environment where individuals can receive medical,
-                                    psychological, and therapeutic support to address their challenges and work towards
-                                    recovery.</p>
-                                <p><a href="{{route('contact')}}" class="btn btn-primary">Contact Us</a></p>
+           
+        </div>
+    </div>
+    <!-- Banner Section End -->
+
+    <!-- About Section Start -->
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container">
+            <div class="row d-flex no-gutters">
+                <div class="col-md-6 d-flex order-md-last">
+                    <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center mb-4 mb-sm-0"
+                         style="background-image:url({{ asset('public/frontend/images/dream/IMG-20240514-WA0014.jpg') }});">
+                        <a href="https://vimeo.com/946532711"
+                           class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+                            <span class="fa fa-play"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-md-5 py-md-5">
+                    <div class="row justify-content-start py-5">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <span class="subheading">Welcome to Dream House</span>
+                            <h2 class="mb-4">About Dream House</h2>
+                            <p>*Authorized & Accredited by Govt Drug Addiction Rehab Center in Kashimpur, Gazipur.</p>
+                            <p>We are an Authorized and Best Addiction Treatment Center in Kashimpur,Gazipur,Bangladesh. Dream House Drug Addiction Rehab is a Unique in Above Treatments for the Following reasons:</p>
+                            <div class="service_description">
+                            <ul class="list-unstyled">
+                                <li class="">
+                                    <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Say no to Drugs.
+                                </li>
+                                <li class="">
+                                    <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Painless Detoxitication.
+                                </li>
+                                <li class="">
+                                    <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Expert Professional Team.(Psychiatrist, psychologist, Addiction Counsellor, Addiction Professional,General Physician etc)
+                                </li>
+                                <li class="">
+                                    <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Individual/Multidisciplinie Treatment Approach.
+                                </li>
+                                <li class="">
+                                    <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Help to Overcome your Drug Addiction & return to a healthy life.
+                                </li>
+                                <li class="">
+                                    <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Extreme good after care Programme.
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ftco-counter pb-5" id="section-counter">
+                        <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="4">0</strong>
+                                </div>
+                                <div class="text">
+                                    <span>Years of <br>Experienced</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="153">0</strong>
+                                </div>
+                                <div class="text">
+                                    <span>Happy <br>Customers</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="2">0</strong>
+                                </div>
+                                <div class="text">
+                                    <span>Award <br>Winning</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Banner Section End -->
+    </section>
+    <!-- About Section end -->
 
-
-
-
+    
     {{--why chose us? Start--}}
 
     <section class="ftco-section">
@@ -267,6 +332,9 @@
     </section>
     <!-- Service Section end -->
     
+
+
+
     <!-- Pricing Section Start -->
     <section class="pricing_section">
         <div class="container">
@@ -279,88 +347,27 @@
 
             <div class="row">
                 <div class="pricing_plan_container">
+                    @foreach($packages as $pack) 
                     <div class="card_container">
                         <div class="card_details">
                             <div class="card_title">
-                                <h3>PACKAGE 1</h3>
+                                <h3>{{$pack->pack_name}}</h3>
                                 <div class="pricing">
-                                    ৳<span> 20000 / BDT</span>
+                                    ৳<span> {{$pack->pack_price}} / BDT</span>
                                 </div>
-                                <p>Four Month</p>
+                                <p>{{$pack->duration}}</p>
                             </div>
                         </div>
 
                         <div class="card_price_description">
                             <ul>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Accomodations
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Treatment
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Counselling
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Foods
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> TV
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> 10 Bed Sharing
-                                </li>
+                              {!! $pack->content !!}
                             </ul>
                         </div>
                     </div>
+@endforeach
 
-                    <div class="card_container">
-                        <div class="card_details">
-                            <div class="card_title">
-                                <h3>PACKAGE 2</h3>
-                                <div class="pricing">
-                                    ৳<span> 20000 / BDT</span>
-                                </div>
-                                <p>Four Month</p>
-                            </div>
-                        </div>
-
-                        <div class="card_price_description">
-                            <ul>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Accomodations
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Treatment
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Counselling
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Foods
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> TV
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> 3 Bed Sharing
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Superior Room
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Extra Food
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Individual Counselling
-                                </li>
-                                <li class="pricing_list">
-                                    <i class="fa fa-check text-success" aria-hidden="true"></i> Extra Teaching Facility
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
+                   
                 </div>
             </div>
         </div>
@@ -560,70 +567,7 @@
     <!-- Team Section end -->
 
 
-    <!-- About Section Start -->
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
-        <div class="container">
-            <div class="row d-flex no-gutters">
-                <div class="col-md-6 d-flex order-md-last">
-                    <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center mb-4 mb-sm-0"
-                         style="background-image:url({{ asset('public/frontend/images/dream/IMG-20240514-WA0014.jpg') }});">
-                        <a href="https://vimeo.com/946532711"
-                           class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-                            <span class="fa fa-play"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 pr-md-5 py-md-5">
-                    <div class="row justify-content-start py-5">
-                        <div class="col-md-12 heading-section ftco-animate">
-                            <span class="subheading">Welcome to Dream House</span>
-                            <h2 class="mb-4">About Dream House</h2>
-                            <p>We offer a structured environment where individuals can receive medical, psychological,
-                                and
-                                therapeutic support to address their challenges and work towards recovery. Treatment
-                                programs typically include detoxification, counseling, group therapy, education on
-                                addiction and coping strategies, as well as aftercare planning to support long-term
-                                sobriety and wellness. Rehab centers may specialize in treating specific types of
-                                addictions or cater to a broader range of substance abuse issues.</p>
-                        </div>
-                    </div>
-                    <div class="row ftco-counter pb-5" id="section-counter">
-                        <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="4">0</strong>
-                                </div>
-                                <div class="text">
-                                    <span>Years of <br>Experienced</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="153">0</strong>
-                                </div>
-                                <div class="text">
-                                    <span>Happy <br>Customers</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="2">0</strong>
-                                </div>
-                                <div class="text">
-                                    <span>Award <br>Winning</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section end -->
+ 
 
     <!-- Success Story Section Start -->
     <section class="ftco-section testimony-section bg-dark">

@@ -44,6 +44,26 @@
                     </a>
                 </li>
 
+                <li class="nav-item {{request()->routeIs('slider') ? 'menu-open' : 'inactive'}}">
+                    <a href="#" class="nav-link ">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <p>
+                            Slider
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('slider.manage') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Manage Slider</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                
+
                 <li class="nav-item {{request()->routeIs('blogs') ? 'menu-open' : 'inactive'}}">
                     <a href="#" class="nav-link ">
                         <i class="nav-icon fas fa-chart-pie"></i>
@@ -82,7 +102,7 @@
                     </ul>
                 </li>
 
-                <li class="nav-item {{request()->routeIs('booking') ? 'menu-open' : 'inactive'}}">
+                <li class="nav-item {{request()->routeIs('gallery') ? 'menu-open' : 'inactive'}}">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-chart-pie"></i>
                         <p>
@@ -100,6 +120,27 @@
 
                     </ul>
                 </li>
+
+                <li class="nav-item {{request()->routeIs('package') ? 'menu-open' : 'inactive'}}">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <p>
+                            Package
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('package.manage') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Manage Package</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                
+                
 
             </ul>
         </nav>

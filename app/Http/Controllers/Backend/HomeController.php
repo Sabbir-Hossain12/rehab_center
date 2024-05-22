@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Gallery;
+use App\Models\Package;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -12,7 +14,8 @@ class HomeController extends Controller
     {
         $images= Gallery::where('status',1)->limit(8)->get();
         
-        
-        return view('frontend.pages.home',compact('images'));
+        $packages= Package::where('status',1)->get();
+        $sliders= Slider::where('status',1)->get();
+        return view('frontend.pages.home',compact('images','packages','sliders'));
     }
 }
