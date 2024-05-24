@@ -47,7 +47,7 @@
 
                 <li class="nav-item {{request()->routeIs('slider') ? 'menu-open' : 'inactive'}}">
                     <a href="#" class="nav-link ">
-                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <i class="nav-icon fas fa-image"></i>
                         <p>
                             Slider
                             <i class="right fas fa-angle-left"></i>
@@ -67,7 +67,7 @@
 
                 <li class="nav-item {{request()->routeIs('blogs') ? 'menu-open' : 'inactive'}}">
                     <a href="#" class="nav-link ">
-                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <i class="nav-icon fas fa-blog"></i>
                         <p>
                             Blogs
                             <i class="right fas fa-angle-left"></i>
@@ -86,7 +86,7 @@
 
                 <li class="nav-item {{request()->routeIs('booking') ? 'menu-open' : 'inactive'}}">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <i class="nav-icon fas fa-comments"></i>
                         <p>
                             Contact Message
                             <i class="right fas fa-angle-left"></i>
@@ -105,7 +105,7 @@
 
                 <li class="nav-item {{request()->routeIs('gallery') ? 'menu-open' : 'inactive'}}">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <i class="nav-icon fas fa-images"></i>
                         <p>
                             Gallery
                             <i class="right fas fa-angle-left"></i>
@@ -124,7 +124,7 @@
 
                 <li class="nav-item {{request()->routeIs('package') ? 'menu-open' : 'inactive'}}">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <i class="nav-icon fas fa-archive"></i>
                         <p>
                             Package
                             <i class="right fas fa-angle-left"></i>
@@ -143,7 +143,7 @@
 
                 <li class="nav-item {{request()->routeIs('basic') ? 'menu-open' : 'inactive'}}">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <i class="nav-icon fas fa-comment-alt"></i>
                         <p>
                             Basic
                             <i class="right fas fa-angle-left"></i>
@@ -162,7 +162,7 @@
 
                 <li class="nav-item {{request()->routeIs('team') ? 'menu-open' : 'inactive'}}">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <i class="nav-icon fas fa-users"></i>
                         <p>
                             Teams
                             <i class="right fas fa-angle-left"></i>

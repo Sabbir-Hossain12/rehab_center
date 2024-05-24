@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\BasicController;
+use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\GellaryController;
 use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\Backend\PackageController;
@@ -11,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\Backend\BlogController;
 use  App\Http\Controllers\Backend\ContactController;
 
-Route::view('dashboard','backend.pages.dashboard')->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('dashboard',[DashboardController::class,'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
 // Route::view('create-blogs','backend.pages.create-blog')->middleware(['auth', 'verified'])->name('create-blog');
 Route::view('booking','backend.pages.booking')->middleware(['auth', 'verified'])->name('booking');
 
