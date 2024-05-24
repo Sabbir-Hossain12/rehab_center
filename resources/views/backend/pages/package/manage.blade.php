@@ -21,7 +21,7 @@
 
             <div class="row my-3 mx-1">
                 <div>
-                    <a href="{{ route('package.create') }}" class="btn btn-primary">Add image</a>
+                    <a href="{{ route('package.create') }}" class="btn btn-primary">Add Package</a>
                 </div>
             </div>
         </div><!-- /.row -->

@@ -12,13 +12,13 @@
                     <div class="col-md-8 mb-md-0 mb-3">
                         <div class="top-wrap d-flex">
                             <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-location-arrow"></span></div>
-                            <div class="text"><span>Address</span><span>1/2 Surabari.ShoilBari Road,Ward No-6,Kashimpur,Gazipur</span></div>
+                            <div class="text"><span>Address</span><span>{{$basic->address}}</span></div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="top-wrap d-flex">
                             <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-phone"></span></div>
-                            <div class="text"><span>Call us</span><span>01973515171, 01908459216</span></div>
+                            <div class="text"><span>Call us</span><span>{{$basic->phone_1}}, {{$basic->phone_2}}</span></div>
                         </div>
                     </div>
                 </div>

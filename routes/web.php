@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\Backend\BasicController;
 use App\Http\Controllers\Backend\GellaryController;
 use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\Backend\PackageController;
 use App\Http\Controllers\Backend\SliderController;
+use App\Http\Controllers\Backend\TeamController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\Backend\BlogController;
@@ -70,6 +72,24 @@ Route::group(['prefix' => '/admin'], function () {
         Route::get('/destroy/{id}', [SliderController::class, 'destroy'])->name('slider.destroy');
 
     });
+
+    Route::group(['prefix' => '/basic'], function () {
+        Route::get('/create', [BasicController::class, 'create'])->name('basic.create');
+        Route::post('/store', [BasicController::class, 'store'])->name('basic.store');
+        Route::post('/update', [BasicController::class, 'update'])->name('basic.update');
+        
+
+    });
+
+    Route::group(['prefix' => '/team'], function () {
+        Route::get('/manage', [TeamController::class, 'manage'])->name('team.manage');
+        Route::get('/create', [TeamController::class, 'create'])->name('team.create');
+        Route::post('/store', [TeamController::class, 'store'])->name('team.store');
+        Route::get('/edit/{id}', [TeamController::class, 'edit'])->name('team.edit');
+        Route::post('/update/{id}', [TeamController::class, 'update'])->name('team.update');
+        Route::get('/destroy/{id}', [TeamController::class, 'destroy'])->name('team.destroy');
+
+    });
     
 });
 
@@ -77,7 +97,9 @@ Route::group(['prefix' => '/admin'], function () {
 //Frontend Pages
 Route::get('/', [HomeController::class,'home'])->name('home');
 Route::view('/about', 'frontend.pages.about')->name('about');
-Route::view('/team', 'frontend.pages.team')->name('team');
+
+Route::get('/team', [TeamController::class,'teamList'])->name('team');
+
 Route::view('/contact', 'frontend.pages.contact')->name('contact');
 Route::get('/gallery',[GellaryController::class,'galleryList'] )->name('gallery');
 Route::get('/pricing-plan', [PackageController::class,'packageList'])->name('pricing-plan');

@@ -4,7 +4,7 @@
             <div class="col-md-6 col-lg">
                 <div class="ftco-footer-widget py-4 py-md-5">
                     <h2 class="logo"><a href="#">Dream House Rehabilitation Center</a></h2>
-{{--                    <p></p>--}}
+
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
                         <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
                         <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -16,12 +16,10 @@
                 <div class="ftco-footer-widget ml-md-5 py-5">
                     <h2 class="ftco-heading-2">Services</h2>
                     <ul class="list-unstyled">
-{{--                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Spinal Manupulation</a></li>--}}
-{{--                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Electrotherapy</a></li>--}}
-{{--                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Manual Lympahtic</a></li>--}}
-{{--                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Medical Acupuncture</a></li>--}}
-{{--                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Therapeutic Exercise</a></li>--}}
-{{--                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Joint Mobilization</a></li>--}}
+                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>{{$basic->service_1 }}</a></li>
+                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>{{$basic->service_2 }}</a></li>
+                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>{{$basic->service_3 }}</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -30,8 +28,8 @@
                     <h2 class="ftco-heading-2">Contact information</h2>
                     <div class="block-23 mb-3">
                         <ul>
-                            <li><span class="icon fa fa-map-marker"></span><span class="text">1/2 Surabari.ShoilBari Road,Ward No-6,Kashimpur,Gazipur</span></li>
-                            <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">01973515171, 01908459216</span></a></li>
+                            <li><span class="icon fa fa-map-marker"></span><span class="text">{{$basic->address }}</span></li>
+                            <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">{{$basic->phone_1}}, {{$basic->phone_2}}</span></a></li>
 {{--                            <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">info@yourdomain.com</span></a></li>--}}
                         </ul>
                     </div>
@@ -43,8 +41,8 @@
                     <div class="opening-hours">
                         <h4>Opening Days:</h4>
                         <p class="pl-3">
-                            <span>Monday – Friday : 9am to 20 pm</span>
-                            <span>Saturday : 9am to 17 pm</span>
+                            <span>{{$basic->business_opening}}</span>
+{{--                            <span>Saturday : 9am to 17 pm</span>--}}
                         </p>
                         <h4>Vacations:</h4>
                         <p class="pl-3">
@@ -59,7 +57,7 @@
             <div class="col-md-12 text-center">
 
                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Developed By <a href="https://colorlib.com" target="_blank">Danpite.Tech</a>
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Developed By <a href="" target="_blank">Danpite.Tech</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
         </div>

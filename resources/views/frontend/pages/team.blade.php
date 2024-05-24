@@ -28,162 +28,32 @@
         </div>
 
         <div class="row">
+            
+            @foreach($teams as $team) 
             <div class="col-md-4 ftco-animate d-flex fadeInUp ftco-animated">
                 <div class="staff bg-primary">
                     <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url({{ asset('public/frontend/images/team/six.jpg') }});"></div>
+                        <div class="img align-self-stretch" style="background-image: url({{ asset($team->team_img) }});"></div>
                     </div>
                     <div class="text pt-3 px-3 pb-4 text-center">
-                        <h3>Susmita Akter
+                        <h3>{{$team->team_name }}
 
                         </h3>
-                        <span class="position mb-2">CEO and Addiction Counselor & Addiction Professional</span>
+                        <span class="position mb-2">{{$team->designation}}</span>
                         <div class="faded">
                             {{--                            <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>--}}
                             <ul class="ftco-social text-center">
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+                                <li class="ftco-animate fadeInUp ftco-animated"><a href="{{$team->twitter_link }}" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+                                <li class="ftco-animate fadeInUp ftco-animated"><a href="{{$team->facebook_link }}" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+                                <li class="ftco-animate fadeInUp ftco-animated"><a href="{{$team->google_link }}" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+                                <li class="ftco-animate fadeInUp ftco-animated"><a href="{{$team->instagram_link }}" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            @endforeach
 
-            <div class="col-md-4 ftco-animate d-flex fadeInUp ftco-animated">
-                <div class="staff bg-primary">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url({{ asset('public/frontend/images/team/seven.jpg') }});"></div>
-                    </div>
-                    <div class="text pt-3 px-3 pb-4 text-center">
-                        <h3>দেওয়ান মোঃ জালাল উদ্দিন
-
-                        </h3>
-                        <span class="position mb-2">চেয়ারম্যান</span>
-                        <div class="faded">
-                            {{--                            <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>--}}
-                            <ul class="ftco-social text-center">
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 ftco-animate d-flex fadeInUp ftco-animated">
-                <div class="staff bg-primary">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url({{ asset('public/frontend/images/team/one.jpg') }});"></div>
-                    </div>
-                    <div class="text pt-3 px-3 pb-4 text-center">
-                        <h3>S.A. Kokhon Sekh
-                        </h3>
-                        <span class="position mb-2">Director & Addiction Professional</span>
-                        <div class="faded">
-{{--                            <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>--}}
-                            <ul class="ftco-social text-center">
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-          
-
-            <div class="col-md-4 ftco-animate d-flex fadeInUp ftco-animated">
-                <div class="staff bg-primary">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url({{ asset('public/frontend/images/team/two.jpg') }});"></div>
-                    </div>
-                    <div class="text pt-3 px-3 pb-4 text-center">
-                        <h3>Kamrun Nahar Sumi
-                        </h3>
-                        <span class="position mb-2">Consultant psychologist & Addiction professional</span>
-                        <div class="faded">
-{{--                            <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>--}}
-                            <ul class="ftco-social text-center">
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 ftco-animate d-flex fadeInUp ftco-animated">
-                <div class="staff bg-primary">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url({{ asset('public/frontend/images/team/three.jpg') }});"></div>
-                    </div>
-                    <div class="text pt-3 px-3 pb-4 text-center">
-                        <h3>Tousif Munaz
-                        </h3>
-                        <span class="position mb-2"> Chief Programmer & Admin</span>
-                        <div class="faded">
-{{--                            <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>--}}
-                            <ul class="ftco-social text-center">
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 ftco-animate d-flex fadeInUp ftco-animated">
-                <div class="staff bg-primary">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url({{ asset('public/frontend/images/team/four.jpg') }});"></div>
-                    </div>
-                    <div class="text pt-3 px-3 pb-4 text-center">
-                        <h3>Dr. Meharab Hasan</h3>
-                        <span class="position mb-2">Medicine specialist</span>
-                        <div class="faded">
-{{--                            <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>--}}
-                            <ul class="ftco-social text-center">
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 ftco-animate d-flex fadeInUp ftco-animated">
-                <div class="staff bg-primary">
-                    <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url({{ asset('public/frontend/images/team/five.jpg') }});"></div>
-                    </div>
-                    <div class="text pt-3 px-3 pb-4 text-center">
-                        <h3>Dr. Shamsul Alam
-                        </h3>
-                        <span class="position mb-2">Psychiatrist</span>
-                        <div class="faded">
-{{--                            <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>--}}
-                            <ul class="ftco-social text-center">
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
-                                <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             
         </div>

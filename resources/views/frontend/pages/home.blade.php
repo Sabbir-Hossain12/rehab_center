@@ -437,16 +437,16 @@
             </div>
 
             <div class="row no-gutters">
+                @foreach($teams as $team) 
                 <div class="col-md-4 col-lg ftco-animate d-flex">
                     <div class="staff bg-primary">
                         <div class="img-wrap d-flex align-items-stretch">
                             <div class="img align-self-stretch"
-                                 style="background-image: url({{ asset('public/frontend/images/team/six.jpg') }});"></div>
+                                 style="background-image: url({{ asset($team->team_img) }});"></div>
                         </div>
                         <div class="text pt-3 px-3 pb-4 text-center">
-                            <h3>Susmita Akter</h3>
-                            <span class="position mb-2">CEO and
-                            Addiction Counselor & Addiction Professional</span>
+                            <h3>{{$team->team_name}}</h3>
+                            <span class="position mb-2">{{$team->designation}}</span>
                             <div class="faded">
                                 <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
 
@@ -454,113 +454,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-4 col-lg ftco-animate d-flex">
-                    <div class="staff bg-primary">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                 style="background-image: url({{ asset('public/frontend/images/team/seven.jpg') }});"></div>
-                        </div>
-                        <div class="text pt-3 px-3 pb-4 text-center">
-                            <h3>দেওয়ান মোঃ জালাল উদ্দিন
-
-                            </h3>
-                            <span class="position mb-2">চেয়ারম্যান</span>
-                            <div class="faded">
-                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg ftco-animate d-flex">
-                    <div class="staff bg-primary">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                 style="background-image: url({{ asset('public/frontend/images/team/one.jpg') }});"></div>
-                        </div>
-                        <div class="text pt-3 px-3 pb-4 text-center">
-                            <h3>S.A. Kokhon Sekh
-                            </h3>
-                            <span class="position mb-2">Director & Addiction professional</span>
-                            <div class="faded">
-                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 col-lg ftco-animate d-flex">
-                    <div class="staff bg-primary">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                 style="background-image: url({{ asset('public/frontend/images/team/two.jpg') }});"></div>
-                        </div>
-                        <div class="text pt-3 px-3 pb-4 text-center">
-                            <h3>Kamrun Nahar Sumi
-                            </h3>
-                            <span class="position mb-2">Consultant psychologist & Addiction professional</span>
-                            <div class="faded">
-                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-lg ftco-animate d-flex">
-                    <div class="staff bg-primary">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                 style="background-image: url({{ asset('public/frontend/images/team/three.jpg') }});"></div>
-                        </div>
-                        <div class="text pt-3 px-3 pb-4 text-center">
-                            <h3>Tousif Munaz
-                            </h3>
-                            <span class="position mb-2"> Chief Programmer & Admin</span>
-                            <div class="faded">
-                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-{{--                <div class="col-md-4 col-lg ftco-animate d-flex">--}}
-{{--                    <div class="staff bg-primary">--}}
-{{--                        <div class="img-wrap d-flex align-items-stretch">--}}
-{{--                            <div class="img align-self-stretch"--}}
-{{--                                 style="background-image: url({{ asset('public/frontend/images/team/four.jpg') }});"></div>--}}
-{{--                        </div>--}}
-{{--                        <div class="text pt-3 px-3 pb-4 text-center">--}}
-{{--                            <h3>Dr. Meharab Hasan--}}
-{{--                            </h3>--}}
-{{--                            <span class="position mb-2">Medicine specialist</span>--}}
-{{--                            <div class="faded">--}}
-{{--                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-
-                <div class="col-md-4 col-lg ftco-animate d-flex">
-                    <div class="staff bg-primary">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                 style="background-image: url({{ asset('public/frontend/images/team/five.jpg') }});"></div>
-                        </div>
-                        <div class="text pt-3 px-3 pb-4 text-center">
-                            <h3>Dr. Shamsul Alam
-                            </h3>
-                            <span class="position mb-2">Psychiatrist</span>
-                            <div class="faded">
-                                <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
