@@ -653,6 +653,45 @@
     </section>
     <!-- Blog section end -->
 
+{{--  Some Logo Starts  --}}
+    <section class="ftco-section testimony-section bg-dark">
+        <div class="container">
+
+            <div class="row ftco-animate">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel ftco-owl">
+                        <div class="item">
+                            <div class="testimony-wrap py-4 d-flex justify-content-center align-items-center">
+                               
+                                <img class="text-center" src="{{ asset('public\frontend\images\logo\gazipur.png')}}" style="width: 220px" alt="logo"/>
+                                
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4 d-flex justify-content-center align-items-center">
+                                <img class="text-center" src="{{ asset('public\frontend\images\logo\fireservice.png')}}" style="width: 220px" alt="logo"/>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4 d-flex justify-content-center align-items-center">
+                                <img class="text-center" src="{{ asset('public\frontend\images\logo\rehab.png')}}" style="width: 220px" alt="logo"/>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="testimony-wrap py-4 d-flex justify-content-center align-items-center">
+                                <img class="text-center" src="{{ asset('public\frontend\images\logo\health.png')}}" style="width: 220px" alt="logo"/>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{--  Some Logo Ends --}}
+    
 {{-- Map and Contact us Starts   --}}
     <section class="ftco-section bg-light">
         <div class="container">
@@ -752,6 +791,10 @@
         </div>
     </section>
     {{-- Map and Contact us Ends   --}}
+    
+    
+
+    
 @endsection
 
 

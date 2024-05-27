@@ -39,16 +39,16 @@
                 <div class="ftco-footer-widget bg-primary p-4 py-5">
                     <h2 class="ftco-heading-2">Business Hours</h2>
                     <div class="opening-hours">
-                        <h4>Opening Days:</h4>
+                        <h4>Opening Hours:</h4>
                         <p class="pl-3">
                             <span>{{$basic->business_opening}}</span>
 {{--                            <span>Saturday : 9am to 17 pm</span>--}}
                         </p>
-                        <h4>Vacations:</h4>
-                        <p class="pl-3">
-                            <span>All Sunday Days</span>
-                            <span>All Official Holidays</span>
-                        </p>
+{{--                        <h4>Vacations:</h4>--}}
+{{--                        <p class="pl-3">--}}
+{{--                            <span>All Sunday Days</span>--}}
+{{--                            <span>All Official Holidays</span>--}}
+{{--                        </p>--}}
                     </div>
                 </div>
             </div>

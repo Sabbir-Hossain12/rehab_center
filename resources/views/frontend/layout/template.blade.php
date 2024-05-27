@@ -15,5 +15,11 @@
 
    @include('frontend.includes.script')
 
+   {{-- Phone icon Starts   --}}
+
+   <a href="tel:{{ App\Models\Basic::first()->phone_1 }}" target="_blank" style="position: fixed;bottom: 50px;right: 6px;z-index:1111">
+       <img src="{{asset('public/whatsappns.png')}}" style="height: 60px;   border-radius:50%">
+   </a>
+   {{-- Phone icon Ends   --}}
 </body>
 </html>
