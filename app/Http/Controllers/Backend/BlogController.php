@@ -125,6 +125,7 @@ class BlogController extends Controller
             return redirect()->back();
         }
     }
+
     public function singleBlog(string $id)
     {
         $singleBlog = Blog::find($id);

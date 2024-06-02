@@ -17,7 +17,7 @@
             <div class="info">
                 <a href="#" class="d-block">{{ Auth::user()->name ?? '' }}</a>
             </div>
-        </div> 
+        </div>
 
         <!-- SidebarSearch Form -->
         {{-- <div class="form-inline">
@@ -63,7 +63,7 @@
 
                     </ul>
                 </li>
-                
+
 
                 <li class="nav-item {{request()->routeIs('blogs') ? 'menu-open' : 'inactive'}}">
                     <a href="#" class="nav-link ">
@@ -78,6 +78,25 @@
                             <a href="{{ route('blog.manage') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Manage Blogs</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item {{request()->routeIs('testimonial') ? 'menu-open' : 'inactive'}}">
+                    <a href="#" class="nav-link ">
+                        <i class="nav-icon fas fa-blog"></i>
+                        <p>
+                            Testimonial
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('testimonial.manage') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Manage Testimonial</p>
                             </a>
                         </li>
 
@@ -178,8 +197,8 @@
 
                     </ul>
                 </li>
-                
-                
+
+
 
             </ul>
         </nav>

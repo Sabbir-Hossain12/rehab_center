@@ -11,6 +11,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\Backend\BlogController;
 use  App\Http\Controllers\Backend\ContactController;
+use  App\Http\Controllers\Backend\TestimonialCoontroller;
 
 Route::get('dashboard',[DashboardController::class,'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
 // Route::view('create-blogs','backend.pages.create-blog')->middleware(['auth', 'verified'])->name('create-blog');
@@ -62,8 +63,17 @@ Route::group(['prefix' => '/admin'], function () {
         Route::get('/edit/{id}', [PackageController::class, 'edit'])->name('package.edit');
         Route::post('/update/{id}', [PackageController::class, 'update'])->name('package.update');
         Route::get('/destroy/{id}', [PackageController::class, 'destroy'])->name('package.destroy');
-
     });
+
+    Route::group(['prefix' => '/testimonial'], function () {
+        Route::get('/manage', [TestimonialCoontroller::class, 'manage'])->name('testimonial.manage');
+        Route::get('/create', [TestimonialCoontroller::class, 'create'])->name('testimonial.create');
+        Route::post('/store', [TestimonialCoontroller::class, 'store'])->name('testimonial.store');
+        Route::get('/edit/{id}', [TestimonialCoontroller::class, 'edit'])->name('testimonial.edit');
+        Route::post('/update/{id}', [TestimonialCoontroller::class, 'update'])->name('testimonial.update');
+        Route::get('/destroy/{id}', [TestimonialCoontroller::class, 'destroy'])->name('testimonial.destroy');
+    });
+
     Route::group(['prefix' => '/slider'], function () {
         Route::get('/manage', [SliderController::class, 'manage'])->name('slider.manage');
         Route::get('/create', [SliderController::class, 'create'])->name('slider.create');
@@ -78,7 +88,7 @@ Route::group(['prefix' => '/admin'], function () {
         Route::get('/create', [BasicController::class, 'create'])->name('basic.create');
         Route::post('/store', [BasicController::class, 'store'])->name('basic.store');
         Route::post('/update', [BasicController::class, 'update'])->name('basic.update');
-        
+
 
     });
 
@@ -91,7 +101,7 @@ Route::group(['prefix' => '/admin'], function () {
         Route::get('/destroy/{id}', [TeamController::class, 'destroy'])->name('team.destroy');
 
     });
-    
+
 });
 
 

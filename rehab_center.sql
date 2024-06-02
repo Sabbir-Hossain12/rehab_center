@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 29, 2024 at 07:37 AM
+-- Generation Time: Jun 02, 2024 at 07:15 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -104,6 +104,8 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
+('admin@gmail.com|127.0.0.1', 'i:2;', 1717303568),
+('admin@gmail.com|127.0.0.1:timer', 'i:1717303568;', 1717303568),
 ('dreamhouse@gmail.com|127.0.0.1', 'i:1;', 1716787203),
 ('dreamhouse@gmail.com|127.0.0.1:timer', 'i:1716787203;', 1716787203);
 
@@ -217,7 +219,18 @@ INSERT INTO `galleries` (`id`, `img_path`, `title`, `status`, `created_at`, `upd
 (18, 'public/backend/images/1716789359.4832.jpg', 'Dream House', 1, '2024-05-26 23:55:59', '2024-05-26 23:55:59'),
 (19, 'public/backend/images/1716789572.1682.jpg', 'Dream House', 1, '2024-05-26 23:59:32', '2024-05-26 23:59:32'),
 (21, 'public/backend/images/1716789788.1472.jpg', 'Dream House', 1, '2024-05-27 00:03:08', '2024-05-27 00:03:08'),
-(22, 'public/backend/images/1716789869.1434.jpg', 'Dream House', 1, '2024-05-27 00:04:29', '2024-05-27 00:04:29');
+(22, 'public/backend/images/1716789869.1434.jpg', 'Dream House', 1, '2024-05-27 00:04:29', '2024-05-27 00:04:29'),
+(23, 'public/backend/images/1717303656.7655.jpg', 'Dream', 1, '2024-06-01 22:47:36', '2024-06-01 22:47:36'),
+(24, 'public/backend/images/1717303885.4068.jpg', 'Dream', 1, '2024-06-01 22:51:25', '2024-06-01 22:51:25'),
+(25, 'public/backend/images/1717303913.0288.jpg', 'Dream', 1, '2024-06-01 22:51:53', '2024-06-01 22:51:53'),
+(26, 'public/backend/images/1717303933.0278.jpg', 'Dream', 1, '2024-06-01 22:52:13', '2024-06-01 22:52:13'),
+(27, 'public/backend/images/1717303985.1516.jpg', 'Dream', 1, '2024-06-01 22:53:05', '2024-06-01 22:53:05'),
+(28, 'public/backend/images/1717304008.9067.jpg', 'Dream', 1, '2024-06-01 22:53:28', '2024-06-01 22:53:28'),
+(29, 'public/backend/images/1717304035.5168.jpg', 'Dream', 1, '2024-06-01 22:53:55', '2024-06-01 22:53:55'),
+(30, 'public/backend/images/1717304053.1012.jpg', 'Dream', 1, '2024-06-01 22:54:13', '2024-06-01 22:54:13'),
+(31, 'public/backend/images/1717304098.2274.jpg', 'Students', 1, '2024-06-01 22:54:58', '2024-06-01 22:54:58'),
+(32, 'public/backend/images/1717304108.693.jpg', 'Students', 1, '2024-06-01 22:55:08', '2024-06-01 22:56:46'),
+(33, 'public/backend/images/1717304530.4338.jpg', 'Students', 1, '2024-06-01 22:55:23', '2024-06-01 23:02:10');
 
 -- --------------------------------------------------------
 
@@ -306,8 +319,8 @@ CREATE TABLE `packages` (
 --
 
 INSERT INTO `packages` (`id`, `pack_name`, `pack_price`, `duration`, `content`, `btn_1`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'Package 1', '5000', '4 Months', '<ol><li>Accomodations</li><li>Treatment</li><li>&nbsp;Counselling</li><li>Foods</li><li>TV</li><li><p>10 Bed Sharing</p><p>&nbsp;</p></li></ol>', NULL, 1, NULL, '2024-05-22 04:50:57'),
-(3, 'Package 2', '8000', '4 Months', '<ol><li>Accomodations</li><li>Treatment</li><li>Counselling</li><li>Foods</li><li>TV</li><li>3 Bed Sharing</li><li>Superior Room</li><li>&nbsp;Extra Food</li><li>Individual Counselling</li><li>Extra Teaching Facility</li></ol>', NULL, 1, '2024-05-22 04:28:13', '2024-05-22 04:53:34');
+(1, 'Package 1', '18000', '4 Months', '<ol><li>Accomodations</li><li>Treatment</li><li>&nbsp;Counselling</li><li>Foods</li><li>TV</li><li><p>10 Bed Sharing</p><p>&nbsp;</p></li></ol>', NULL, 1, NULL, '2024-06-01 01:05:08'),
+(3, 'Package 2', '25000', '4 Months', '<ol><li>Accomodations</li><li>Treatment</li><li>Counselling</li><li>Foods</li><li>TV</li><li>3 Bed Sharing</li><li>Superior Room</li><li>&nbsp;Extra Food</li><li>Individual Counselling</li><li>Extra Teaching Facility</li></ol>', NULL, 1, '2024-05-22 04:28:13', '2024-06-01 01:05:23');
 
 -- --------------------------------------------------------
 
@@ -342,9 +355,14 @@ CREATE TABLE `sessions` (
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
 ('12QFsBFIHVmk5iWFXbJ7edxf8HJ694ajc1La7FG4', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoib0Nzd2lHZzJNV1Fya1BLSHNMeUkwbkRJWVN6WE82MVFObWZiektZNSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHBzOi8vbG9jYWxob3N0L3JlaGFiX2NlbnRlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1716791244),
+('As1tHlTqrBF5pHsuPS3M6ZT6Bu7aHPPYHtOu8dqP', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiaE9jT0p6RWcxVUl3VmtQRU5ZVWhXakFIdDN1ekd6bEg3bWpOd3JVMiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHBzOi8vbG9jYWxob3N0L3JlaGFiX2NlbnRlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7fQ==', 1717304535),
 ('ehEgjYII65VHBrZTe8C5v7Eh6hZ7q4ubAsdyEpxk', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiQ25Zb0c5WGVmY3pYeVB6NEptclZkc0pOWEFHUjRCMkVvRG9SOTdHSiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHBzOi8vbG9jYWxob3N0L3JlaGFiX2NlbnRlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1716800925),
+('FiSWzycnLV7HumXYBF0qYGF3FIFPZT1z4nsIcD99', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoickJ1ZXhFR1ZYZzQyTjY0U3NUSUQ1UlpaOU9pM3BJVHh5RTF3dXU3USI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHBzOi8vbG9jYWxob3N0L3JlaGFiX2NlbnRlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1717146610),
 ('o6fo1KKMbhDqrtllgoPvG41cm1A5r8oiwPrXqC53', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoidmRmNkdVckJrMldRZndVTmp6WGRuNDBqM0Y5M3dacklnNlhYazZxQyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHBzOi8vbG9jYWxob3N0L3JlaGFiX2NlbnRlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1716959696),
-('SJh3UodflpfZcSuzFuMlcHEJyNOWbzsEG0yhsGDH', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiUVVaOHE5YXpQZUF6azlBaUExMVlKbGgyRmJxY1VzTXgxUW5uckU1SCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHBzOi8vbG9jYWxob3N0L3JlaGFiX2NlbnRlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1716960678),
+('PYa6VIXnR4b9hscIovaGOuMzxImBJkjqdEp0ewj5', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiaXE3N0FmS05ZUDdTZEpORmV2Y3VZenJBaUNYNmpVT3VGNFp5dTkwWSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHBzOi8vbG9jYWxob3N0L3JlaGFiX2NlbnRlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1716963691),
+('qr8DL0Bzh9JIolTp9QLuCeeRLOw5g68JKwUxzHsF', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTUJHT0tEYlc0Ym12Q2RZeE9VSU9lYUVnWWQwYjRVRlVWTW9wbEpUMSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHBzOi8vbG9jYWxob3N0L3JlaGFiX2NlbnRlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1717225652),
+('SJh3UodflpfZcSuzFuMlcHEJyNOWbzsEG0yhsGDH', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiUVVaOHE5YXpQZUF6azlBaUExMVlKbGgyRmJxY1VzTXgxUW5uckU1SCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHBzOi8vbG9jYWxob3N0L3JlaGFiX2NlbnRlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1716964705),
+('UUt8pP5PXmoAv9XnRVhktUzIggasLgCvgOZ57hTW', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoic3lGTWF6eFFJSWVicWZOcE5ZdDlaV09WYXVHU2o1VGRYM0lobk9EYyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHBzOi8vbG9jYWxob3N0L3JlaGFiX2NlbnRlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7fQ==', 1717235605),
 ('wEJYBsvaoCTv017bQlifeAUbiaKnwGQ1xZyz8NH4', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiWm56aWU1QUdsMG9YUjZsY205M0NHNncyRmRTSEJvdjJwZ1BzNVR0YiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHBzOi8vbG9jYWxob3N0L3JlaGFiX2NlbnRlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1716800440),
 ('WH6Z3aQVnM5lnV9KIqe5iSXEH8DgGc035q69ghUd', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiblprUTFmWWhIckpBZ1ZUZGZmV3dGYkdrbjVhMEZlV2E3UUVVQmhnRyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHBzOi8vbG9jYWxob3N0L3JlaGFiX2NlbnRlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7fQ==', 1716802228);
 
@@ -398,13 +416,12 @@ CREATE TABLE `teams` (
 --
 
 INSERT INTO `teams` (`id`, `team_img`, `team_name`, `designation`, `twitter_link`, `facebook_link`, `google_link`, `instagram_link`, `status`, `created_at`, `updated_at`) VALUES
-(5, 'public/backend/images/1716531253.7632.jpg', 'Susmita Akter', 'CEO and Addiction Counselor & Addiction Professional', NULL, NULL, NULL, NULL, 1, '2024-05-24 00:14:13', '2024-05-24 00:14:13'),
-(6, 'public/backend/images/1716531280.1623.jpg', 'দেওয়ান মোঃ জালাল উদ্দিন', 'চেয়ারম্যান', NULL, NULL, NULL, NULL, 1, '2024-05-24 00:14:40', '2024-05-24 00:14:40'),
-(7, 'public/backend/images/1716531301.0215.jpg', 'S.A. Kokhon Sekh', 'Director & Addiction Professional', NULL, NULL, NULL, NULL, 1, '2024-05-24 00:15:01', '2024-05-24 00:15:01'),
-(8, 'public/backend/images/1716531330.0805.jpg', 'Kamrun Nahar Sumi', 'Consultant psychologist & Addiction professional', NULL, NULL, NULL, NULL, 1, '2024-05-24 00:15:30', '2024-05-24 00:15:30'),
-(9, 'public/backend/images/1716531379.4764.jpg', 'Tousif Munaz', 'Chief Programmer & Admin', NULL, NULL, NULL, NULL, 1, '2024-05-24 00:16:19', '2024-05-24 00:16:19'),
-(10, 'public/backend/images/1716531409.6042.jpg', 'Dr. Meharab Hasan', 'Medicine specialist', NULL, NULL, NULL, NULL, 1, '2024-05-24 00:16:49', '2024-05-24 00:16:49'),
-(11, 'public/backend/images/1716531433.5316.jpg', 'Dr. Shamsul Alam', 'Psychiatrist', NULL, NULL, NULL, NULL, 1, '2024-05-24 00:17:13', '2024-05-24 00:17:13');
+(1, 'public/backend/images/1716531253.7632.jpg', 'Susmita Akter', 'Founder and Chairman', NULL, NULL, NULL, NULL, 1, '2024-05-24 00:14:13', '2024-06-01 00:47:11'),
+(2, 'public/backend/images/1716531301.0215.jpg', 'S.A. Kokhon Sekh', 'Director & Addiction Professional', NULL, NULL, NULL, NULL, 1, '2024-05-24 00:15:01', '2024-05-24 00:15:01'),
+(3, 'public/backend/images/1716531433.5316.jpg', 'Dr. Shamsul Alam', 'Psychiatrist', NULL, NULL, NULL, NULL, 1, '2024-05-24 00:17:13', '2024-05-24 00:17:13'),
+(4, 'public/backend/images/1716531409.6042.jpg', 'Dr. Meharab Hasan', 'Medicine specialist', NULL, NULL, NULL, NULL, 1, '2024-05-24 00:16:49', '2024-05-24 00:16:49'),
+(5, 'public/backend/images/1716531330.0805.jpg', 'Kamrun Nahar Sumi', 'Consultant psychologist & Addiction professional', NULL, NULL, NULL, NULL, 1, '2024-05-24 00:15:30', '2024-05-24 00:15:30'),
+(6, 'public/backend/images/1716531379.4764.jpg', 'Tousif Munaz', 'Addiction Professional/ Counselor UTC Eco trained. Department of Narcotics Control, Dhaka.', NULL, NULL, NULL, NULL, 1, '2024-05-24 00:16:19', '2024-06-01 00:53:12');
 
 -- --------------------------------------------------------
 
@@ -581,7 +598,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `galleries`
 --
 ALTER TABLE `galleries`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `jobs`
@@ -611,7 +628,7 @@ ALTER TABLE `sliders`
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `users`
