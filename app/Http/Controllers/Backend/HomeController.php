@@ -13,7 +13,7 @@ class HomeController extends Controller
 {
     public function home()
     {
-        $images= Gallery::where('status',1)->limit(8)->get();
+        $images= Gallery::where('status',1)->whereIn('title',['Dream','Students'])->get();
         $teams=Team::where('status',1)->limit(6)->get();
         $packages= Package::where('status',1)->get();
         $sliders= Slider::where('status',1)->get();

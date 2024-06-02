@@ -3,7 +3,7 @@
 <head>
 
     <title>
-        @stack('meta-title')
+        Dream House
     </title>
 
     <meta charset="utf-8">

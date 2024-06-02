@@ -1,8 +1,5 @@
 @extends('frontend.layout.template')
 
-@push('meta-title')
-    Reheb
-@endpush
 
 @section('body-content')
 
