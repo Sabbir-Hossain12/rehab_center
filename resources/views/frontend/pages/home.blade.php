@@ -31,13 +31,13 @@
 
 
     <!-- About Section Start -->
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <section class="ftco-section ftco-no-pt ftco-no-pb px-3">
         <div class="container">
             <div class="row d-flex no-gutters">
                 <div class="col-md-6 d-flex order-md-last">
                     <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center mb-4 mb-sm-0"
-                         style="background-image:url({{ asset('public/frontend/images/dream/IMG-20240514-WA0014.jpg') }});">
-                        <a href="https://vimeo.com/946532711"
+                         style="background-image:url({{ asset($about->side_img) }});">
+                        <a href="{{$about->img_link}}"
                            class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
                             <span class="fa fa-play"></span>
                         </a>
@@ -47,73 +47,37 @@
                     <div class="row justify-content-start py-5">
                         <div class="col-md-12 heading-section ftco-animate">
                             <span class="subheading">Welcome to Dream House</span>
-                            <h2 class="mb-4">About Dream House</h2>
-                            <p>*Authorized & Accredited by Govt Drug Addiction Rehab Center in Kashimpur, Gazipur.</p>
-                            <p>We are an Authorized and Best Addiction Treatment Center in Kashimpur,Gazipur,Bangladesh.
-                                Dream House Drug Addiction Rehab is a Unique in Above Treatments for the Following
-                                reasons:</p>
+                            <h2 class="mb-4">{{$about->title}}</h2>
+                            <p>{{$about->text_1}}</p>
+                            <p>{{$about->text_2}}</p>
                             <div class="service_description">
-                                <ul class="list-unstyled">
-                                    <li class="">
-                                        <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Say no to
-                                        Drugs.
-                                    </li>
-                                    <li class="">
-                                        <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Painless
-                                        Detoxitication.
-                                    </li>
-                                    <li class="">
-                                        <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Expert
-                                        Professional Team.(Psychiatrist, psychologist, Addiction Counsellor, Addiction
-                                        Professional,General Physician etc)
-                                    </li>
-                                    <li class="">
-                                        <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>
-                                        Individual/Multidisciplinie Treatment Approach.
-                                    </li>
-                                    <li class="">
-                                        <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Help to
-                                        Overcome your Drug Addiction & return to a healthy life.
-                                    </li>
-                                    <li class="">
-                                        <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Extreme
-                                        good after care Programme.
-                                    </li>
-                                </ul>
+                                {!! $about->text_3 !!}
                             </div>
                         </div>
                     </div>
-                    <div class="row ftco-counter pb-5" id="section-counter">
-                        <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+
+                    <div class="row ftco-counter lg-pb-5 pb-0" id="section-counter">
+                        <div class="col-6 col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate counter_data">
                             <div class="block-18">
                                 <div class="text">
-                                    <strong class="number" data-number="4">0</strong>
+                                    <strong class="number" data-number="{{$about->years}}">0</strong>
                                 </div>
                                 <div class="text">
                                     <span>Years of <br>Experienced</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+
+                        <div class="col-6 col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate counter_data">
                             <div class="block-18">
                                 <div class="text">
-                                    <strong class="number" data-number="153">0</strong>
+                                    <strong class="number" data-number="{{$about->customers}}">0</strong>
                                 </div>
                                 <div class="text">
                                     <span>Happy <br>Customers</span>
                                 </div>
                             </div>
                         </div>
-                        {{--                        <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">--}}
-                        {{--                            <div class="block-18">--}}
-                        {{--                                <div class="text">--}}
-                        {{--                                    <strong class="number" data-number="2">0</strong>--}}
-                        {{--                                </div>--}}
-                        {{--                                <div class="text">--}}
-                        {{--                                    <span>Award <br>Winning</span>--}}
-                        {{--                                </div>--}}
-                        {{--                            </div>--}}
-                        {{--                        </div>--}}
                     </div>
                 </div>
             </div>
@@ -128,184 +92,54 @@
             <div class="row justify-content-center mb-5">
                 <div class="col-md-8 text-center heading-section ftco-animate fadeInUp ftco-animated">
                     <span class="subheading">Services</span>
-                    <h2 class="mb-4">Why Choose Us?</h2>
+                    <h2 class="mb-4">{{$choose->title_1}}</h2>
                 </div>
             </div>
 
             <div class="row tabulation mt-4 ftco-animate fadeInUp ftco-animated">
                 <div class="col-md-6 d-flex order-md-last">
                     <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center mb-4 mb-sm-0"
-                         style="background-image:url({{ asset('public/frontend/images/dream/new/IMG-20240521-WA0012.jpg') }});">
+                         style="background-image:url({{ asset($choose->img_1) }});">
                     </div>
                 </div>
 
                 <div class="col-md-6 pr-md-5 py-md-5">
                     <div class="row justify-content-start pb-5">
                         <div class="col-md-12 heading-section ftco-animate">
-                            <h2 class="mb-4">Rehab Center in Dhaka, Bangladesh: Your Path to Recovery from Drug
-                                Addiction</h2>
-                            <p style="font-size: 16px; margin: 0;">Dream House Rehabilitation center offer a structured
-                                environment where individuals can receive medical, psychological,
-                                and
-                                therapeutic support to address their challenges and work towards recovery. Treatment
-                                programs typically include detoxification, counseling, group therapy, education on
-                                addiction and coping strategies, as well as aftercare planning to support long-term
-                                sobriety and wellness. Rehab centers may specialize in treating specific types of
-                                addictions or cater to a broader range of substance abuse issues.</p>
+                            <h2 class="mb-4">{{$choose->title_2}}</h2>
+                            <p style="font-size: 16px; margin: 0;">{{$choose->text_1}}</p>
                         </div>
                     </div>
 
                     <div class="service_description">
-                        <ul>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Room charges &
-                                food
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Basic medical
-                                advice, nursing and supervision of skilled attendents.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Individual
-                                counseling sessions.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Yoga &
-                                Meditation.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Attending N/A
-                                meeting weekly.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Outing and
-                                recreational programs.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Weekly support
-                                group program.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Physical
-                                excercise & training by gym instructor.
-                            </li>
-                            <li class="service_list">
-                                <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> Religious
-                                spiritual lecture program.
-                            </li>
-                        </ul>
+                        {!! $choose->text_2 !!}
                     </div>
                 </div>
             </div>
-            <!-- services Section end -->
 
             <div class="drug_addic_details" style="">
-                <h5 style="font-size: 17px; margin: 0; "><strong>Understanding Drug Addiction in Bangladesh:</strong>
+                <h5 style="font-size: 17px; margin: 0; "><strong>{{$choose->title_3}}</strong>
                 </h5>
-                <p style="font-size: 17px; margin-top: 20px;">Drug addiction, also known as
-                    substance use disorder, is a chronic disease characterized by companies drug-seeking and use,
-                    despite harmful consequences. In Bangladesh, drug addiction has become a major issue, affecting
-                    indeviduals from all walks of life.It is crucial to have a comprehensive understanding of this
-                    problem in order to address it effectively.
-
-                </p>
-
-                <h5>Commonly Abused Drugs</h5>
+                <p style="font-size: 17px; margin-top: 20px;">{{$choose->text_3}}</p>
+                <h5>{{$choose->title_4}}</h5>
                 <div class="service_description">
-                    <ul>
-                        <li class="service_list">
-                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>
-                            <strong>Yaba:</strong> A methamphetamine-based drug, often referred to as "crazy medicine,"
-                            is widely abused in Bangladesh. It is smuggled primarily from Myanmar and has become a
-                            significant problem due to its affordability and availability.
-                        </li>
-                        <li class="service_list">
-                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>
-                            <strong>Heroin:</strong> Heroin abuse remains prevalent, particularly in urban areas. It is
-                            often imported from neighboring countries through illegal channels.
-                        </li>
-                        <li class="service_list">
-                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>
-                            <strong>Phensedyl:</strong> A codeine-based cough syrup, Phensedyl is frequently abused,
-                            especially in border areas. Despite being banned, it is smuggled from India and consumed for
-                            its psychoactive effects.
-                        </li>
-                        <li class="service_list">
-                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i>
-                            <strong>Cannabis:</strong> Locally known as "ganja," cannabis is widely used across
-                            different social strata. It is cultivated locally and also smuggled into the country.
-                        </li>
-                        <li class="service_list">
-                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> <strong>Other
-                                Prescription Drugs:</strong> Abuse of prescription drugs like diazepam and tramadol is
-                            also on the rise, often obtained without proper medical prescriptions.
-                        </li>
-
-
-                    </ul>
+                    {!! $choose->text_4 !!}
                 </div>
 
                 <div class="service_description py-4">
-                    <h5>Causes of Drug Addiction</h5>
+                    <h5>{{$choose->title_5}}</h5>
 
-                    <ul>
-                        <li class="service_list">
-                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> <strong>Socio-Economic
-                                Factors:</strong> Poverty, unemployment, and lack of education are significant drivers
-                            of drug abuse. Many individuals, particularly the youth, turn to drugs as a coping mechanism
-                            for their socio-economic challenges.
-                        </li>
-                        <li class="service_list">
-                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> <strong>Peer
-                                Pressure:</strong> Peer influence is a critical factor, especially among teenagers and
-                            young adults. The desire to fit in or gain social acceptance can lead individuals to
-                            experiment with drugs.
-                        </li>
-                        <li class="service_list">
-                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> <strong>Mental Health
-                                Issues:</strong> Anxiety, depression, and other mental health disorders can lead
-                            individuals to self-medicate with drugs, exacerbating the addiction problem.
-                        </li>
-                        <li class="service_list">
-                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> <strong>Availability
-                                and Accessibility:</strong> The porous borders with neighboring countries facilitate the
-                            easy smuggling of drugs, making them readily available and accessible.
-                        </li>
-                        <li class="service_list">
-                            <i class="fa fa-long-arrow-right text-success" aria-hidden="true"></i> <strong>Lack of
-                                Awareness</strong> Limited awareness and education about the dangers of drug abuse
-                            contribute to the growing addiction problem. Many people are unaware of the long-term
-                            consequences of drug use.
-                        </li>
-
-
-                    </ul>
+                    {!! $choose->text_5 !!}
                 </div>
-                {{--      Image           --}}
 
-                <div class="row">
+                <div class="row px-3 best_rehebs">
                     <div class="col-12 sm-w-50">
                         <div class="overlay text-center py-2">
-                            <img src="{{asset('public/frontend/images/dream/new/IMG-20240521-WA0010.jpg')}}"
-                                 class="shadow-lg rounded text-center img-fluid" style="height: 500px; width: 70%"
-                                 alt="Dream House">
+                            <img src="{{asset($choose->img_2)}}" class="shadow-lg rounded text-center reheb_center_consultancy" alt="Dream House">
                         </div>
                     </div>
                     <h2 class="text-center text-success pt-2">Best Rehab Center in Bangladesh</h2>
-                    <p class="lh-base fs-5 fw-normal">Dream Rehabilitation Center is known as the “Best Rehab Center in
-                        Dhaka, Bangladesh.” Dream House provides caring and effective care to people who are trying to
-                        heal from drug abuse. Our skilled and dedicated staff is committed to giving the best recovery
-                        services in Dhaka. We make custom treatment plans a top priority as the “Best Rehab Center in
-                        Dhaka” to make sure that each person gets the help they need on their way to recovery. Our
-                        all-around method at Dream House Rehabilitation Center treats the physical, emotional, and
-                        mental parts of addiction. Our building has all the latest features, which creates a safe and
-                        healing space for people to heal and change. Dream House is known as the Best Rehab Center in
-                        Dhaka because it offers therapies, counseling, and holistic wellness programs that are all based
-                        on scientific proof and are meant to help people stay clean. You are choosing the Best Rehab
-                        Center in Dhaka when you choose Dream House Rehabilitation Center. The community there is ready
-                        to help people get clean and live a life without drugs. Dream Houses has a reputation as the
-                        Best Rehab Center in Dhaka because we are committed to providing the highest level of care for
-                        people who are trying to get better. </p>
+                    <p class="lh-base fs-5 fw-normal">{{$choose->text_6}}</p>
                 </div>
             </div>
 
@@ -314,7 +148,7 @@
     <!-- why chose us? End -->
 
 
-    <!-- Service Section Start -->
+    <!-- Treatment Section Start -->
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center pb-5 mb-3">
@@ -324,71 +158,26 @@
                 </div>
             </div>
             <div class="row">
+                @foreach($treatments as $treatment) 
                 <div class="col-md-4 services ftco-animate">
 
                     <div class="reheb_service_benefits d-block">
                         <div class="top_border"></div>
                         <div class="icon d-flex justify-content-center align-items-center">
-                            <img src="{{ asset('public/frontend/images/blood.png') }}" alt="" style="width: 40px;">
+                            <img src="{{ asset($treatment->treat_img) }}" alt="" style="width: 40px;">
                         </div>
 
                         <div class="media-body px-2">
-                            <h3 class="heading">Drug Testing </h3>
-                            <p>Prerequisite to assess the drug abuse in prilimiry stage of drug addiction treatment. The
-                                treatment plan is designed on the basis of drug abuse.</p>
-                            <p><a href="#" class="btn-custom">Read more</a></p>
+                            <h3 class="heading">{{$treatment->treat_title}} </h3>
+                            <p>{{$treatment->treat_desc}}</p>
+                            {{-- <p><a href="#" class="btn-custom">Read more</a></p> --}}
                         </div>
                     </div>
 
-                    <div class="reheb_service_benefits d-block">
-                        <div class="top_border"></div>
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <img src="{{ asset('public/frontend/images/heart.png') }}" alt="" style="width: 40px;">
-                        </div>
-
-                        <div class="media-body px-2">
-                            <h3 class="heading">Aftercare Treatment </h3>
-                            <p>A continuing care is offered in a structured manner where a person enjoy the progress
-                                after completing a formal addiction treatment program. </p>
-                            <p><a href="#" class="btn-custom">Read more</a></p>
-                        </div>
-                    </div>
-
-
+                   
                 </div>
 
-
-                <div class="col-md-4 services ftco-animate">
-                    <div class="reheb_service_benefits d-block">
-                        <div class="top_border"></div>
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <img src="{{ asset('public/frontend/images/outpatient.png') }}" alt="" style="width: 40px;">
-                        </div>
-
-                        <div class="media-body px-2">
-                            <h3 class="heading">Inpatient Treatment </h3>
-                            <p>Residential treatment programs at Dream House provide patients with a monitored,
-                                supportive environment for the duration of their recovery.</p>
-                            <p><a href="#" class="btn-custom">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 services ftco-animate">
-                    <div class="reheb_service_benefits d-block">
-                        <div class="top_border"></div>
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <img src="{{ asset('public/frontend/images/inpatient.png') }}" alt="" style="width: 40px;">
-                        </div>
-
-                        <div class="media-body px-2">
-                            <h3 class="heading">Outpatient Treatment </h3>
-                            <p>Outpatient programs at Dream House enable patients to continue working and commuting with
-                                their families during an inpatient stay in healthy process.</p>
-                            <p><a href="#" class="btn-custom">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -413,9 +202,9 @@
                                 <div class="card_title">
                                     <h3>{{$pack->pack_name}}</h3>
                                     <div class="pricing">
-                                        ৳<span> {{$pack->pack_price}} / Months</span>
+                                        ৳<span> {{$pack->pack_price}} / Per Months</span>
                                     </div>
-                                    <p>{{$pack->duration}}</p>
+                                    <p style="color: green;">Duration: {{$pack->duration}}</p>
                                 </div>
                             </div>
 
@@ -445,18 +234,18 @@
                         </h3>
 
                         <ol class="package_list">
-                            <li>1. Room Charges and Food</li>
-                            <li>2. Dope test and drug assessment during admission</li>
-                            <li>3. Detoxification, if required</li>
-                            <li>4. Medical treatment, Nursing and Supervision of skilled attendants</li>
-                            <li>5. Individual Counseling Sessions</li>
-                            <li>6. Group therapy session by Addiction Counselors & Psychologists</li>
-                            <li>7. Yoga & Meditation</li>
-                            <li>8. Attending NA meeting weekly</li>
-                            <li>9. Weekly outing program to theme parks</li>
-                            <li>10. Weekly Support Group Program</li>
-                            <li>11. Family counseling sessions as required</li>
-                            <li>12. Religious spiritual lecture program monthly</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i> Room Charges and Food</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i> Dope test and drug assessment during admission</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i> Detoxification, if required</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i> Medical treatment, Nursing and Supervision of skilled attendants</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i> Individual Counseling Sessions</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i> Group therapy session by Addiction Counselors & Psychologists</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i> Yoga & Meditation</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i> Attending NA meeting weekly</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i> Weekly outing program to theme parks</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i> Weekly Support Group Program</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i> Family counseling sessions as required</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i> Religious spiritual lecture program monthly</li>
                         </ol>
                     </div>
                 </div>
@@ -467,17 +256,17 @@
                             Value:</h3>
 
                         <ol class="package_list">
-                            <li>1. All necessary diagnostic charges</li>
-                            <li>2. Medicines & medical items</li>
-                            <li>3. Specialized medical consultancy</li>
-                            <li>4. Breakage of any property of Dream House</li>
-                            <li>5. Special ambulatory service charge depending on team & time involved, transport cost
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i>  All necessary diagnostic charges</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i>  Medicines & medical items</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i>  Specialized medical consultancy</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i>  Breakage of any property of Dream House</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i>  Special ambulatory service charge depending on team & time involved, transport cost
                             </li>
-                            <li>6. Cost of escorting, if required</li>
-                            <li>7. Necessary Dope test</li>
-                            <li>8. Personal laundry salon services, etc.</li>
-                            <li>9. Personal extra expense</li>
-                            <li>10. Service charge @10 of package value</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i>  Cost of escorting, if required</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i>  Necessary Dope test</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i>  Personal laundry salon services, etc.</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i>  Personal extra expense</li>
+                            <li><i class="fa fa-long-arrow-right text-success me-2" aria-hidden="true"></i>  Service charge @10 of package value</li>
                         </ol>
                     </div>
                 </div>
@@ -583,14 +372,14 @@
                     <div class="col-md-3 ftco-animate">
                         <div class="work img d-flex align-items-center"
                              style="background-image: url({{ asset($image->img_path)}});">
-                            <a href="" class="icon image-popup d-flex justify-content-center align-items-center">
+                            {{-- <a href="" class="icon image-popup d-flex justify-content-center align-items-center">
                                 <span class="fa fa-expand"></span>
                             </a>
                             <div class="desc w-100 px-4 text-center pt-5 mt-5">
                                 <div class="text w-100 mb-3 mt-4">
                                     <h2><a href="#">{{$image->title}}</a></h2>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 @endforeach
@@ -600,7 +389,7 @@
         <div class="container" style="color: gray; font-weight: 900; font-size: 17px; text-align: center; margin-top: 60px;">
             <div class="row">
                 <div class="col-lg-12">
-                   <p><i class="fa fa-quote-left text-dark me-3" style="font-size: 30px;" aria-hidden="true"></i> Our excessive facility features beautifully landscaped gardens, abundant trees, a swimming pool, and a dedicated fish farming area. We also offer various outdoor recreational activities. Spanning 153 acres, our center provides unmatched amenities compared to other rehab centers in Bangladesh. For enhanced security, the property is enclosed by a 20-foot wall. <i class="fa fa-quote-right text-dark ms-3" style="font-size: 30px;" aria-hidden="true"></i></p>
+                   <p><i class="fa fa-quote-left text-dark me-3" style="font-size: 30px;" aria-hidden="true"></i> Our excessive facility features beautifully landscaped gardens, surrounded by trees, a swimming pool, and a dedicated fish farming area. We also offer various outdoor recreational activities. Spanning 153 acres, our center provides unmatched amenities compared to other rehab centers in Bangladesh. For enhanced security, the property is enclosed by a 20-foot wall. <i class="fa fa-quote-right text-dark ms-3" style="font-size: 30px;" aria-hidden="true"></i></p>
                 </div>
             </div>
         </div>
@@ -654,33 +443,17 @@
             <div class="row ftco-animate">
                 <div class="col-md-12">
                     <div class="govt-logo owl-carousel ftco-owl">
+                        @foreach($logos as $logo) 
                         <div class="item">
                             <div class="testimony-wrap py-4 d-flex justify-content-center align-items-center">
-
-                                <img class="text-center" src="{{ asset('public\frontend\images\logo\gazipur.png')}}"
-                                     style="width: 220px" alt="logo"/>
-
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap py-4 d-flex justify-content-center align-items-center">
-                                <img class="text-center" src="{{ asset('public\frontend\images\logo\fireservice.png')}}"
+                                <img class="text-center" src="{{ asset($logo->logo_img)}}"
                                      style="width: 220px" alt="logo"/>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="testimony-wrap py-4 d-flex justify-content-center align-items-center">
-                                <img class="text-center" src="{{ asset('public\frontend\images\logo\rehab.png')}}"
-                                     style="width: 220px" alt="logo"/>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="testimony-wrap py-4 d-flex justify-content-center align-items-center">
-                                <img class="text-center" src="{{ asset('public\frontend\images\logo\health.png')}}"
-                                     style="width: 220px" alt="logo"/>
-                            </div>
-                        </div>
+                        @endforeach
+                            
+                        
+                  
 
                     </div>
                 </div>

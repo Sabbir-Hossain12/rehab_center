@@ -86,7 +86,7 @@ class SliderController extends Controller
                 $imagePath          = 'public/backend/images/';
                 $thumbnail->move($imagePath, $imageName);
 
-                $slider->img_path = $imagePath . $imageName;
+                $slider->slider_img = $imagePath . $imageName;
             }
 
             $slider->save();

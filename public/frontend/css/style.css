@@ -8789,9 +8789,15 @@ h1, h2, h3, h4, h5,
       text-transform: uppercase;
       font-weight: 600;
       color: rgba(0, 0, 0, 0.7); }
+      .ftco-counter .counter-wrap{
+        text-align: left;
+      }
   @media (max-width: 767.98px) {
     .ftco-counter .counter-wrap {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px;
+      text-align: center;
+    }
+}
 
 .staff {
   width: 100%;
@@ -9084,7 +9090,9 @@ textarea.form-control {
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 3em 0;
+    }
+}
 
 .ftco-bg-dark {
   background: #3c312e; }

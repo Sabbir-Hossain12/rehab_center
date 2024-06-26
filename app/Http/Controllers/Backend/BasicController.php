@@ -49,7 +49,7 @@ class BasicController extends Controller
                 }
 
                 $imageName          = microtime('.') . '.' . $thumbnail->getClientOriginalExtension();
-                $imagePath          = 'public/backend/images/';
+                $imagePath          = 'public/backend/images/basic/';
                 $thumbnail->move($imagePath, $imageName);
 
                 $basic->logo_img = $imagePath . $imageName;

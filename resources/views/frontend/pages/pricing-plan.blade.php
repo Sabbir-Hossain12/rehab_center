@@ -26,8 +26,8 @@
 
         <div class="row">
             <div class="pricing_plan_container">
-                
-                @foreach($packages as $pack) 
+
+                @foreach($packages as $pack)
                 <div class="card_container">
                     <div class="card_details">
                         <div class="card_title">
@@ -35,7 +35,7 @@
                             <div class="pricing">
                                 ৳<span> {{$pack->pack_price}} / BDT</span>
                             </div>
-                            <p>{{$pack->duration}}</p>
+                            <p>Duration: {{$pack->duration}}</p>
                         </div>
                     </div>
 
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 @endforeach
-               
+
 
             </div>
         </div>

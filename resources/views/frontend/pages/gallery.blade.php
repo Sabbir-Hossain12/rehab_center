@@ -21,28 +21,20 @@
 <section class="ftco-section ftco-no-pt ftco-no-pb " style="margin: 0 0 100px 0;">
     <div class="container-fluid px-md-0">
         <div class="row no-gutters">
-            
-            @foreach($images as $image) 
+
+            @foreach($images as $image)
             <div class="col-md-3 ftco-animate">
                 <div class="work img d-flex align-items-center" style="background-image: url({{ asset($image->img_path)}});">
-                    <a href="" class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="fa fa-expand"></span>
-                    </a>
-                    <div class="desc w-100 px-4 text-center pt-5 mt-5">
-                        <div class="text w-100 mb-3 mt-4">
-                            <h2><a href="#">{{$image->title}}</a></h2>
-                        </div>
-                    </div>
                 </div>
             </div>
             @endforeach
-            
-                        
 
-          
 
-            
-            
+
+
+
+
+
         </div>
     </div>
 </section>

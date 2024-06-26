@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-md-3 mb-md-0 mb-4 d-flex align-items-center">
-                <a class="navbar-brand" href="">Dream House</a>
+                <a class="navbar-brand" ><img src="{{ asset($basic->logo_img) }}" alt="" style="width: 60px; margin-right: 10px;"> Dream House</a>
 
             </div>
             <div class="col-md-7">
@@ -40,7 +40,7 @@
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa fa-bars"></span>
-             <a class="navbar-brand" href="">Dream House</a>
+             <a class="navbar-brand">Dream House</a>
         </button>
         {{-- <div class="order-lg-last">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticData">Make an appointment</button>

@@ -1,21 +1,24 @@
 <?php
 
+use App\Http\Controllers\Backend\AboutController;
 use App\Http\Controllers\Backend\BasicController;
+use App\Http\Controllers\Backend\BlogController;
+use App\Http\Controllers\Backend\ChooseController;
+use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\GellaryController;
 use App\Http\Controllers\Backend\HomeController;
+use App\Http\Controllers\Backend\LogoController;
 use App\Http\Controllers\Backend\PackageController;
 use App\Http\Controllers\Backend\SliderController;
 use App\Http\Controllers\Backend\TeamController;
+use App\Http\Controllers\Backend\TestimonialCoontroller;
+use App\Http\Controllers\Backend\TreatmentController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use  App\Http\Controllers\Backend\BlogController;
-use  App\Http\Controllers\Backend\ContactController;
-use  App\Http\Controllers\Backend\TestimonialCoontroller;
 
-Route::get('dashboard',[DashboardController::class,'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
-// Route::view('create-blogs','backend.pages.create-blog')->middleware(['auth', 'verified'])->name('create-blog');
-Route::view('booking','backend.pages.booking')->middleware(['auth', 'verified'])->name('booking');
+Route::get('dashboard', [DashboardController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::view('booking', 'backend.pages.booking')->middleware(['auth', 'verified'])->name('booking');
 
 
 Route::middleware('auth')->group(function () {
@@ -29,7 +32,6 @@ require __DIR__.'/auth.php';
 
 
 Route::group(['prefix' => '/admin'], function () {
-
     // Blog
     Route::group(['prefix' => '/blog'], function () {
         Route::get('/manage', [BlogController::class, 'manage'])->name('blog.manage');
@@ -53,7 +55,6 @@ Route::group(['prefix' => '/admin'], function () {
         Route::get('/edit/{id}', [GellaryController::class, 'edit'])->name('gallery.edit');
         Route::post('/update/{id}', [GellaryController::class, 'update'])->name('gallery.update');
         Route::get('/destroy/{id}', [GellaryController::class, 'destroy'])->name('gallery.destroy');
-
     });
 
     Route::group(['prefix' => '/package'], function () {
@@ -81,15 +82,12 @@ Route::group(['prefix' => '/admin'], function () {
         Route::get('/edit/{id}', [SliderController::class, 'edit'])->name('slider.edit');
         Route::post('/update/{id}', [SliderController::class, 'update'])->name('slider.update');
         Route::get('/destroy/{id}', [SliderController::class, 'destroy'])->name('slider.destroy');
-
     });
 
     Route::group(['prefix' => '/basic'], function () {
         Route::get('/create', [BasicController::class, 'create'])->name('basic.create');
         Route::post('/store', [BasicController::class, 'store'])->name('basic.store');
         Route::post('/update', [BasicController::class, 'update'])->name('basic.update');
-
-
     });
 
     Route::group(['prefix' => '/team'], function () {
@@ -99,21 +97,31 @@ Route::group(['prefix' => '/admin'], function () {
         Route::get('/edit/{id}', [TeamController::class, 'edit'])->name('team.edit');
         Route::post('/update/{id}', [TeamController::class, 'update'])->name('team.update');
         Route::get('/destroy/{id}', [TeamController::class, 'destroy'])->name('team.destroy');
-
     });
 
+// Logo section
+    Route::resource('/logo', LogoController::class)->names('logo');
+
+//  Treatment Section
+    Route::resource('/treatment', TreatmentController::class)->names('treatment');
+
+//   About
+    Route::resource('/about', AboutController::class)->names('about');
+
+//    Choose
+    Route::resource('/choose', ChooseController::class)->names('choose');
 });
 
 
 //Frontend Pages
-Route::get('/', [HomeController::class,'home'])->name('home');
+Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::view('/about', 'frontend.pages.about')->name('about');
 
-Route::get('/team', [TeamController::class,'teamList'])->name('team');
+Route::get('/team', [TeamController::class, 'teamList'])->name('team');
 
 Route::view('/contact', 'frontend.pages.contact')->name('contact');
-Route::get('/gallery',[GellaryController::class,'galleryList'] )->name('gallery');
-Route::get('/pricing-plan', [PackageController::class,'packageList'])->name('pricing-plan');
+Route::get('/gallery', [GellaryController::class, 'galleryList'])->name('gallery');
+Route::get('/pricing-plan', [PackageController::class, 'packageList'])->name('pricing-plan');
 Route::view('/blog', 'frontend.pages.blog')->name('blog');
 Route::view('/department', 'frontend.pages.department')->name('department');
 Route::view('/service', 'frontend.pages.services')->name('service');
